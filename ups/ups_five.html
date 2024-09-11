@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>А-Сервис - Ваш проводник в мире ИБП</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo1.png">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body style="background: #D3D3D3;">
+
+<style>
+  .modal-open {
+    margin-right: -17px;
+    overflow: scroll;
+  }
+</style>
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
+  <div class="modal-dialog modal-lg">    
+    <div class="modal-content">      
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</span></button>        
+        <div class="modal-title">Просмотр
+        </div>      
+      </div>      
+      <div class="modal-body">  
+        <img class="img-responsive center-block" src="" alt=""> 
+      </div>      
+      <div class="modal-footer">        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
+      </div>    
+    </div>  
+  </div>
+</div>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html#key" id="key">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
+          <span class="navbar-text">А-Сервис</span>
+        </div>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a href="#">О нас<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="../index.html#contact">Контакты</a>
+              </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            <span class="glyphicon glyphicon-list"></span>
+              Каталог
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="../ups/ups_first.html">Домашние ИБП</a></li>
+              <li><a href="../ups/ups_second.html">ИБП исполнения RACK</a></li>
+              <li><a href="../ups/ups_third.html">Трёхфазные ИБП</a></li>
+              <li><a href="../ups/ups_four.html">Аккумуляторные батареи</a></li>
+              <li><a href="../ups/ups_five.html">Батарейные модули</a></li>
+              <li><a href="../ups/ups_six.html">Хранение АКБ</a></li>
+              <li><a href="../ups/ups_seven.html">Периферия</a></li>
+            </ul>
+          </li>
+          <!-- Конец -->
+          <li class="nav-item">
+            <a href="#">Сервисное обслуживание</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Пуско-наладочные работы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Тендеры</a>
+          </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-send"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <div class="article container" style="margin-top: -100px"> 
+    <div class="row">
+      <div class="col-md-12">        
+          <h1 class="h3 page-header"><b>Батарейные блоки SKAT BC RACK</b></h1>
+          <p>Батарейные блоки используются совместно с ИБП для обеспечения бесперебойным питанием оборудования, используемого, в частности: в средствах связи и сетях электроснабжения, в образовательной, финансовой и транспортной сфере, в структуре государственной безопасности, в научно-исследовательских центрах.</p>
+          <p><h4 class="page-header">Батарейные блоки <b>SKAT BC RACK</b> 
+            <span class="badge badge-pill badge-minpromtorg badge-custom" title="Минпромторг">Минпромторг
+            </span></h4> имеют современный дизайн и обладают удобством и простотой обслуживания и эксплуатации.</p>          
+             <ul class="nav nav-pills nav-justified" id="myTabEvents">  
+              <!-- Или nav-tabs -->              
+              <li class="active">
+                <a class="active" data-toggle="tab" href="#evPanel1">SKAT BC 24/18 Rack, 24В, 18Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel2">SKAT BC 24/36 Rack, 24В, 36Ач</a>
+              </li>  
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel3">SKAT BC 36/18 Rack, 36В, 18Ач</a>
+              </li> 
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel4">SKAT BC 48/18 Rack, 48В, 18Ач</a>
+              </li> 
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel5">SKAT BC 72/9 Rack, 72В, 9Ач</a>
+              </li> 
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel6">SKAT BC 72/18 Rack, 72В, 18Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel7">SKAT BC 192/9 Rack, 72В, 18Ач</a>
+              </li>
+            </ul> 
+            <div class="tab-content" id="myTabContent">
+              <!-- Панель №1 -->
+              <div id="evPanel1" class="tab-pane fade in active"> 
+                <h3>SKAT BC 24/18 Rack, 24В, 18Ач</h3>
+                  <p>Представлен двумя модификациями: 
+                  <li><b><a href="#2418" style="text-decoration: none; color: black;">SKAT BC 24/18</a></b> - батарейный блок со встроенным модулем защиты АКБ для ИБП <a href="../ups/ups_second.html">SKAT-UPS 1000-Online</a></li>
+                  <li><b><a href="#2418s" style="text-decoration: none; color: black;">SKAT BC 24/18S</a></b> - батарейный блок для <a href="../ups/ups_second.html">SKAT-UPS 1000-Online-2x9Ah</a></li> 
+                    <div class="row">
+                      <div class="col-md-12">        
+                          <style type="text/css">
+                            h2{
+                              margin: 0;         
+                              color: #666;    
+                              padding-top: 90px;    
+                              font-size: 52px;    
+                              font-family: "trebuchet ms", sans-serif;    
+                            }
+                            .item{        
+                              background: white;        
+                              text-align: center;    
+                              height: 300px !important;
+                            }
+                            .carousel{    
+                              margin-top: 20px;        
+                            }             
+                          </style>
+                          <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+                          <ol class="carousel-indicators">   
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li> 
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                          </ol>     
+                            <div class="carousel-inner">
+                              <div class="active item"> 
+                                <center>                  
+                                  <a href="../images/bc/432_24_1.jpg" class="thumbnail" style="border:focus: 0.5;">   
+                                  <img src="../images/bc/432_24_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                                  </a>
+                                </center>                 
+                              </div>      
+                              <div class="item">   
+                                <center>
+                                  <a href="../images/bc/432_24_2.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/bc/432_24_2.jpg" alt="" style="height: 300px;" >
+                                  </a>
+                                </center>
+                                <div class="carousel-caption">
+                                </div>     
+                              </div>     
+                              <div class="item">    
+                                <center>
+                                  <a href="../images/bc/432_24_3.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/bc/432_24_3.jpg" alt="" style="height: 300px;"> 
+                                  </a>  
+                                </center>
+                                <div class="carousel-caption">
+                                </div>    
+                              </div> 
+                              <div class="item">    
+                                <center>
+                                  <a href="../images/bc/432_24_4.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/bc/432_24_4.jpg" alt="" style="height: 300px;"> 
+                                  </a>  
+                                </center>
+                                <div class="carousel-caption">
+                                </div>    
+                              </div>
+                            </div>  
+                          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>  
+                          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>  
+                          </a>
+                        </div>
+                        <div>  
+                          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr id="2418">
+                              <td colspan="4"><b style="font-size: 14px;">SKAT BC 24/18</b></td>
+                            </tr>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное выходное напряжение постоянного тока, В</td>
+                              <td><strong>24</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная емкость, Ач</td>
+                              <td><strong>18</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="3"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Количество АКБ в изделии, шт.</td>
+                              <td><strong>4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Номинальная емкость каждой АКБ, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Номинальный ток защитного автоматического выключателя, А</td>
+                              <td><strong>40</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">7</td>
+                              <td rowspan="2">Габаритные размеры ШхГхВ, не более, мм</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>445х346х87</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>460х430х115</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>15,6 (16,2)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Диапазон рабочих температур,  &#176;С</td>
+                              <td><strong>0...+40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Относительная влажность воздуха (без конденсации), %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td>&#9888;</td>
+                              <td colspan="3"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div> 
+                      <div>
+                        <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr id="2418s">
+                              <td colspan="4"><b style="font-size: 14px;">SKAT BC 24/18S</b></td>
+                            </tr>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Напряжение питающей сети ~220В, частотой 50&#177;1Гц, с пределами изменения, В</td>
+                              <td><strong>150...285</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная частота входного напряжения (автоопределение), Гц</td>
+                              <td><strong>50/60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>24</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В, емкостью 9Ач</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Напряжение заряда АКБ, В</td>
+                              <td><strong>27,4&#177;1</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Ток заряда АКБ, А</td>
+                              <td><strong>1,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Режим заряда АКБ</td>
+                              <td><strong>CV</strong></td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td colspan="2">Время заряда АКБ до 90% емкости, ч</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Количество отсеков для размещения АКБ, шт.</td>
+                              <td><strong>2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Количество АКБ в отсеке, шт.</td>
+                              <td><strong>2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Номинальный ток плавких предохранителей АКБ (быстрые предохранители 2шт. х 30А) в каждом отсеке, А</td>
+                              <td><strong>60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Защита по входу - предохнатилеь автоматический, А</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Поддержка горячей замены АКБ</td>
+                              <td><strong>Да</strong></td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td colspan="2">Ток утечки, мкА, не более</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">14</td>
+                              <td rowspan="2">Габаритные размеры, ШхГхВ, мм, не более</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>440х430х88</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>555х565х205</strong></td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>16,9 (19,4)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td colspan="2">Диапазон рабочих температур, &#176;С</td>
+                              <td><strong>0...40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td colspan="2">Относительная влажность воздуха при 25&#176;С, %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                     
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 2 -->
+              <div id="evPanel2" class="tab-pane fade">  
+                <h3>SKAT BC 24/36 Rack, 24В, 36Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel2" data-pause="hover"> 
+          <ol class="carousel-indicators">   
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>   
+            <li data-target="#myCarousel2" data-slide-to="2"></li>  
+            <li data-target="#myCarousel2" data-slide-to="3"></li> 
+            <li data-target="#myCarousel2" data-slide-to="4"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>   
+                  <a href="../images/bc/431_24_1.jpg" class="thumbnail"> 
+                  <img src="../images/bc/431_24_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/431_24_2.jpg" class="thumbnail">
+                  <img src="../images/bc/431_24_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>    
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/431_24_3.jpg" class="thumbnail">
+                  <img src="../images/bc/431_24_3.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/431_24_4.jpg" class="thumbnail">
+                  <img src="../images/bc/431_24_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/431_24_5.jpg" class="thumbnail">
+                  <img src="../images/bc/431_24_5.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel2" data-slide="prev">   
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel2" data-slide="next">  
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное выходное напряжение постоянного тока, В</td>
+                              <td><strong>24</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная емкость, Ач</td>
+                              <td><strong>36</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="3"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Количество АКБ в изделии, шт.</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Номинальная емкость каждой АКБ, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Номинальный ток защитного автоматического выключателя, А</td>
+                              <td><strong>40</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">7</td>
+                              <td rowspan="2">Габаритные размеры ШхГхВ, не более, мм</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>441х583х87</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>545х700х105</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>28,7 (29,9)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Диапазон рабочих температур,  &#176;С</td>
+                              <td><strong>0...+40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Относительная влажность воздуха (без конденсации), %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td>&#9888;</td>
+                              <td colspan="3"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 3 -->
+              <div id="evPanel3" class="tab-pane fade">  
+                <h3>SKAT BC 36/18S3 Rack, 36В, 18Ач</h3>  
+    <div class="row">
+      <div class="col-md-12">    
+          <div id="myCarousel3" class="carousel slide" data-interval="3000" data-ride="carousel3" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>
+                  <a href="../images/bc/8753_36_1.jpg" class="thumbnail">
+                  <img src="../images/bc/8753_36_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center> 
+                <div class="carousel-caption">                    
+                </div>                  
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/8753_36_2.jpg" class="thumbnail">
+                  <img src="../images/bc/8753_36_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>   
+            </div>  
+          <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel3" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                      <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Напряжение питающей сети ~220В, частотой 50&#177;1Гц, с пределами изменения, В</td>
+                              <td><strong>150...285</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная частота входного напряжения (автоопределение), Гц</td>
+                              <td><strong>50/60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>36</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В, емкостью 9Ач</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Напряжение заряда АКБ, В</td>
+                              <td><strong>41,1&#177;1</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Ток заряда АКБ, А</td>
+                              <td><strong>1,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Режим заряда АКБ</td>
+                              <td><strong>CV</strong></td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td colspan="2">Время заряда АКБ до 90% емкости, ч</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Количество отсеков для размещения АКБ, шт.</td>
+                              <td><strong>2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Количество АКБ в отсеке, шт.</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Номинальный ток плавких предохранителей АКБ (быстрые предохранители 2шт. х 30А) в каждом отсеке, А</td>
+                              <td><strong>60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Защита по входу - предохнатилеь автоматический, А</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Поддержка горячей замены АКБ</td>
+                              <td><strong>Да</strong></td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td colspan="2">Ток утечки, мкА, не более</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">14</td>
+                              <td rowspan="2">Габаритные размеры, ШхГхВ, мм, не более</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>440х430х88</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>560х570х205</strong></td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>21,7 (24,2)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td colspan="2">Диапазон рабочих температур, &#176;С</td>
+                              <td><strong>0...40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td colspan="2">Относительная влажность воздуха при 25&#176;С, %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 4 -->
+              <div id="evPanel4" class="tab-pane fade">  
+                <h3>SKAT BC 48/18S3 Rack, 48В, 18Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel4" class="carousel slide" data-interval="3000" data-ride="carousel4" data-pause="hover">  
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel4" data-slide-to="1"></li>  
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/bc/8755_48_1.jpg" class="thumbnail">
+                  <img src="../images/bc/8755_48_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center> 
+                <div class="carousel-caption">                    
+                </div>                
+              </div>    
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/8755_48_2.jpg" class="thumbnail">
+                  <img src="../images/bc/8755_48_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel4" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel4" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                        <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Напряжение питающей сети ~220В, частотой 50&#177;1Гц, с пределами изменения, В</td>
+                              <td><strong>150...285</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная частота входного напряжения (автоопределение), Гц</td>
+                              <td><strong>50/60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>48</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В, емкостью 9Ач</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Напряжение заряда АКБ, В</td>
+                              <td><strong>54,8&#177;1</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Ток заряда АКБ, А</td>
+                              <td><strong>1,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Режим заряда АКБ</td>
+                              <td><strong>CV</strong></td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td colspan="2">Время заряда АКБ до 90% емкости, ч</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Количество отсеков для размещения АКБ, шт.</td>
+                              <td><strong>2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Количество АКБ в отсеке, шт.</td>
+                              <td><strong>4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Номинальный ток плавких предохранителей АКБ (быстрые предохранители 2шт. х 30А) в каждом отсеке, А</td>
+                              <td><strong>60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Защита по входу - предохнатилеь автоматический, А</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Поддержка горячей замены АКБ</td>
+                              <td><strong>Да</strong></td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td colspan="2">Ток утечки, мкА, не более</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">14</td>
+                              <td rowspan="2">Габаритные размеры, ШхГхВ, мм, не более</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>440х550х88</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>555х685х205</strong></td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>27,8 (30,7)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td colspan="2">Диапазон рабочих температур, &#176;С</td>
+                              <td><strong>0...40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td colspan="2">Относительная влажность воздуха при 25&#176;С, %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 5 -->
+              <div id="evPanel5" class="tab-pane fade">  
+                <h3>SKAT BC 72/9 Rack, 72В, 9Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel5" class="carousel slide" data-interval="3000" data-ride="carousel5" data-pause="hover">  
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel5" data-slide-to="1"></li> 
+            <li data-target="#myCarousel5" data-slide-to="2"></li>  
+            <li data-target="#myCarousel5" data-slide-to="3"></li> 
+          </ol> 
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>
+                  <a href="../images/bc/434_72_1.jpg" class="thumbnail">    
+                  <img src="../images/bc/434_72_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>   
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/434_72_2.jpg" class="thumbnail">
+                  <img src="../images/bc/434_72_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>   
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/434_72_3.jpg" class="thumbnail">
+                  <img src="../images/bc/434_72_3.jpg" alt="" style="height: 300px;">
+                  </a>   
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/434_72_4.jpg" class="thumbnail">
+                  <img src="../images/bc/434_72_4.jpg" alt="" style="height: 300px;">
+                  </a>   
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel5" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel5" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                        <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное выходное напряжение постоянного тока, В</td>
+                              <td><strong>72</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная емкость, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="3"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Количество АКБ в изделии, шт.</td>
+                              <td><strong>6</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Номинальная емкость каждой АКБ, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Номинальный ток защитного автоматического выключателя, А</td>
+                              <td><strong>40</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">7</td>
+                              <td rowspan="2">Габаритные размеры ШхГхВ, не более, мм</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>441х580х87</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>665х470х115</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>23,1 (23,9)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Диапазон рабочих температур,  &#176;С</td>
+                              <td><strong>0...+40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Относительная влажность воздуха (без конденсации), %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td>&#9888;</td>
+                              <td colspan="3"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 6 -->
+              <div id="evPanel6" class="tab-pane fade">  
+                <h3>SKAT BC 72/18S3 Rack, 72В, 18Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel6" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel6" data-slide-to="1"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/bc/8757_72_1.jpg" class="thumbnail">
+                  <img src="../images/bc/8757_72_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/8757_72_2.jpg" class="thumbnail">
+                  <img src="../images/bc/8757_72_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel6" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel6" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          
+                          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Напряжение питающей сети ~220В, частотой 50&#177;1Гц, с пределами изменения, В</td>
+                              <td><strong>150...285</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная частота входного напряжения (автоопределение), Гц</td>
+                              <td><strong>50/60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>72</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В, емкостью 9Ач</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Напряжение заряда АКБ, В</td>
+                              <td><strong>82,2&#177;1</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Ток заряда АКБ, А</td>
+                              <td><strong>1,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Режим заряда АКБ</td>
+                              <td><strong>CV</strong></td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td colspan="2">Время заряда АКБ до 90% емкости, ч</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Количество отсеков для размещения АКБ, шт.</td>
+                              <td><strong>2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Количество АКБ в отсеке, шт.</td>
+                              <td><strong>6</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Номинальный ток плавких предохранителей АКБ (быстрые предохранители 2шт. х 30А) в каждом отсеке, А</td>
+                              <td><strong>60</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Защита по входу - предохнатилеь автоматический, А</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Поддержка горячей замены АКБ</td>
+                              <td><strong>Да</strong></td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
+                              <td colspan="2">Ток утечки, мкА, не более</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">14</td>
+                              <td rowspan="2">Габаритные размеры, ШхГхВ, мм, не более</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>440х710х88</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>565х835х205</strong></td>
+                            </tr>
+                            <tr>
+                              <td>15</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>39,8 (43,0)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>16</td>
+                              <td colspan="2">Диапазон рабочих температур, &#176;С</td>
+                              <td><strong>0...40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>17</td>
+                              <td colspan="2">Относительная влажность воздуха при 25&#176;С, %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>18</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 7 -->
+              <div id="evPanel7" class="tab-pane fade"> 
+                <h3>SKAT BC 192/9 Rack, 72В, 18Ач</h3>  
+    <div class="row">
+      <div class="col-md-12">  
+          <div id="myCarousel7" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel7" data-slide-to="1"></li>
+            <li data-target="#myCarousel7" data-slide-to="2"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>   
+                  <a href="../images/bc/407_192_1.jpg" class="thumbnail"> 
+                  <img src="../images/bc/407_192_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>    
+              <div class="item">   
+                <center>
+                  <a href="../images/bc/407_192_2.jpg" class="thumbnail">
+                  <img src="../images/bc/407_192_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>     
+              <div class="item">    
+                <center>
+                  <a href="../images/bc/407_192_3.png" class="thumbnail">
+                  <img src="../images/bc/407_192_3.png" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div> 
+          <a class="carousel-control left" href="#myCarousel7" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel7" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное выходное напряжение постоянного тока, В</td>
+                              <td><strong>192</strong></td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td colspan="2">Номинальная емкость, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td colspan="3"><strong>Тип АКБ: герметичные свинцово-кислотные необслуживаемые, номинальным напряжением 12В</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Количество АКБ в изделии, шт.</td>
+                              <td><strong>16</strong></td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td colspan="2">Номинальная емкость каждой АКБ, Ач</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Номинальный ток защитного автоматического выключателя, А</td>
+                              <td><strong>63</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">7</td>
+                              <td rowspan="2">Габаритные размеры ШхГхВ, не более, мм</td>
+                              <td>Без упаковки и кронштейнов</td>
+                              <td><strong>450х738х87</strong></td>
+                            </tr>
+                            <tr>
+                              <td>В упаковке</td>
+                              <td><strong>470х850х120</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Масса, НЕТТО (БРУТТО), кг, не более</td>
+                              <td><strong>52,0 (55,0)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Диапазон рабочих температур,  &#176;С</td>
+                              <td><strong>0...+40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td colspan="2">Относительная влажность воздуха (без конденсации), %, не более</td>
+                              <td><strong>90</strong></td>
+                            </tr>
+                            <tr>
+                              <td>&#9888;</td>
+                              <td colspan="3"><strong>ВНИМАНИЕ! Не допускается наличие в воздухе токопроводящей пыли и паров агрессивных веществ (кислот, щелочей и т.п.)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Степень защиты оболочкой по ГОСТ 14254-2015</td>
+                              <td><strong>IP20</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Содержание драгоценных металлов и камней</td>
+                              <td><strong>нет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>            
+                    </div>
+                  </div>
+                </p>
+              </div>
+                        
+            </div>   
+        </div>
+      </div>
+
+  <div class="form answer">
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="request">Получить персональное предложение</span></p>
+        <form action="" method="get">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Иван Иванов">
+        </label>       
+        <label>
+          Электронная почта:
+          <input type="email" name="email" placeholder="example@email.com">
+        </label>
+        <label>
+          Номер телефона:
+          <input type="email" name="email" placeholder="+7-000-0000000">
+        </label>
+        <label>
+          Запрос:
+          <textarea name="comment" placeholder="Уточните необходимое количество и тип ИБП"></textarea>
+        </label>
+          <!-- Тип кнопки -->
+          <script type="text/javascript">  
+            $(document).ready(function(){ 
+              $("#myButton4").click(function(){
+                $(this).button('loading').delay(300).queue(function() {
+                $(this).button('complete');
+                $(this).dequeue();
+                });        
+              });
+            });   
+          </script>
+          <button type="button" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div> 
+  </div> 
+</main>
+<footer>
+  <div class="container text-center">      
+    <p class="year"><a href="https://www.reach-stacker.ru">А-Сервис</a>, 2024</p>
+  </div>
+</footer>
+  <script src="../js/jquery.backstretch.min.js">  </script>  
+  <script>
+      $.backstretch([
+      "/images/fon.jpg",
+      ], {
+      fade: 750,
+      duration: 8000
+    });
+    </script> 
+    <script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+    </script>
+</body>
+</html>

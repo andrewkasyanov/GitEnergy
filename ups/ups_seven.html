@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>А-Сервис - Ваш проводник в мире ИБП</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo1.png">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body style="background: #D3D3D3;">
+
+<style>
+  .modal-open {
+    margin-right: -17px;
+    overflow: scroll;
+  }
+</style>
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
+  <div class="modal-dialog modal-lg">    
+    <div class="modal-content">      
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</span></button>        
+        <div class="modal-title">Просмотр
+        </div>      
+      </div>      
+      <div class="modal-body">  
+        <img class="img-responsive center-block" src="" alt=""> 
+      </div>      
+      <div class="modal-footer">        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
+      </div>    
+    </div>  
+  </div>
+</div>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html#key" id="key">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
+          <span class="navbar-text">А-Сервис</span>
+        </div>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a href="#">О нас<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="../index.html#contact">Контакты</a>
+              </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            <span class="glyphicon glyphicon-list"></span>
+              Каталог
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="../ups/ups_first.html">Домашние ИБП</a></li>
+              <li><a href="../ups/ups_second.html">ИБП исполнения RACK</a></li>
+              <li><a href="../ups/ups_third.html">Трёхфазные ИБП</a></li>
+              <li><a href="../ups/ups_four.html">Аккумуляторные батареи</a></li>
+              <li><a href="../ups/ups_five.html">Батарейные модули</a></li>
+              <li><a href="../ups/ups_six.html">Хранение АКБ</a></li>
+              <li><a href="../ups/ups_seven.html">Периферия</a></li>
+            </ul>
+          </li>
+          <!-- Конец -->
+          <li class="nav-item">
+            <a href="#">Сервисное обслуживание</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Пуско-наладочные работы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Тендеры</a>
+          </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-send"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <div class="article container" style="margin-top: -100px"> 
+    <div class="row">
+      <div class="col-md-12">        
+          <h1 class="h3 page-header"><b>Периферия, аксессуары</b></h1>
+          <p>111</p>
+          <p>222</p>
+          <p><h4 class="page-header"><b></b></h4></p>
+          <p></p>
+             <ul class="nav nav-pills nav-justified" id="myTabEvents">  
+              <!-- Или nav-tabs -->
+              <li class="active">
+                <a class="tabnav" data-toggle="tab" href="#evPanel1">SKAT SB 12В, 7Ач</a>
+              </li>  
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel2">SKAT SB 12В, 9Ач</a>
+              </li>  
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel3">SKAT SB 12В, 40Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel4">SKAT SB 12В, 50Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel5">SKAT SB 12В, 65Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel6">SKAT SB 12В, 80Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel7">SKAT SB 12В, 100Ач</a>
+              </li>
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel8">SKAT SB 12В, 120Ач</a>
+              </li>    
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel9">SKAT SB 12В, 125Ач</a>
+              </li> 
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel10">SKAT SB 12В, 150Ач</a>
+              </li> 
+              <li>
+                <a class="tabnav" data-toggle="tab" href="#evPanel11">SKAT SB 12В, 200Ач</a>
+              </li> 
+            </ul> 
+            <div class="tab-content" id="myTabContent">
+              <!-- Панель №1 -->
+              <div id="evPanel1" class="tab-pane fade in active"> 
+                <h3>SKAT SB 12В, 7Ач</h3> 
+                    <div class="row">
+                      <div class="col-md-12">        
+                          <style type="text/css">
+                            h2{
+                              margin: 0;         
+                              color: #666;    
+                              padding-top: 90px;    
+                              font-size: 52px;    
+                              font-family: "trebuchet ms", sans-serif;    
+                            }
+                            .item{        
+                              background: white;        
+                              text-align: center;    
+                              height: 300px !important;
+                            }
+                            .carousel{    
+                              margin-top: 20px;        
+                            }             
+                          </style>
+                          <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+                          <ol class="carousel-indicators">   
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li> 
+                            <li data-target="#myCarousel" data-slide-to="2"></li>  
+                            <li data-target="#myCarousel" data-slide-to="3"></li>  
+                            <li data-target="#myCarousel" data-slide-to="4"></li>  
+                          </ol>     
+                            <div class="carousel-inner">
+                              <div class="active item"> 
+                                <center>                  
+                                  <a href="../images/akb/1207_1.jpg" class="thumbnail" style="border:focus: 0.5">   
+                                  <img src="../images/akb/1207_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                                  </a>
+                                </center>                 
+                              </div>      
+                              <div class="item">   
+                                <center>
+                                  <a href="../images/akb/1207_2.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/akb/1207_2.jpg" alt="" style="height: 300px;" >
+                                  </a>
+                                </center>
+                                <div class="carousel-caption">
+                                </div>     
+                              </div>     
+                              <div class="item">    
+                                <center>
+                                  <a href="../images/akb/1207_3.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/akb/1207_3.jpg" alt="" style="height: 300px;"> 
+                                  </a>  
+                                </center>
+                                <div class="carousel-caption">
+                                </div>    
+                              </div> 
+                              <div class="item">    
+                                <center>
+                                  <a href="../images/akb/1207_4.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/akb/1207_4.jpg" alt="" style="height: 300px;"> 
+                                  </a>  
+                                </center>
+                                <div class="carousel-caption">
+                                </div>    
+                              </div>
+                              <div class="item">    
+                                <center>
+                                  <a href="../images/akb/1207_5.jpg" class="thumbnail" style="border:focus: 0.5">
+                                  <img src="../images/akb/1207_5.jpg" alt="" style="height: 300px;">  
+                                  </a> 
+                                </center>
+                                <div class="carousel-caption">
+                                </div>    
+                              </div> 
+                            </div>  
+                          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>  
+                          </a>  
+                          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>  
+                          </a>
+                        </div>
+                        <div>        
+                          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>7</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>6,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>6</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>4</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>33</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>2,1</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>66х151х100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>2,1</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>F1 нож</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>6 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 2 -->
+              <div id="evPanel2" class="tab-pane fade">  
+                <h3>SKAT SB 12В, 9Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel2" data-pause="hover"> 
+          <ol class="carousel-indicators">   
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel2" data-slide-to="1"></li>   
+            <li data-target="#myCarousel2" data-slide-to="2"></li>  
+            <li data-target="#myCarousel2" data-slide-to="3"></li>  
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>   
+                  <a href="../images/akb/1209_1.jpg" class="thumbnail"> 
+                  <img src="../images/akb/1209_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/1209_2.jpg" class="thumbnail">
+                  <img src="../images/akb/1209_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>    
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1209_3.jpg" class="thumbnail">
+                  <img src="../images/akb/1209_3.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel2caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1209_4.jpg" class="thumbnail">
+                  <img src="../images/akb/1209_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel2" data-slide="prev">   
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel2" data-slide="next">  
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>8,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>7,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>5,3</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>13</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>2,7</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>151х66х100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>2,4</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>F2 нож</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 3 -->
+              <div id="evPanel3" class="tab-pane fade">  
+                <h3>SKAT SB 12В, 40Ач</h3>  
+    <div class="row">
+      <div class="col-md-12">    
+          <div id="myCarousel3" class="carousel slide" data-interval="3000" data-ride="carousel3" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel3" data-slide-to="1"></li> 
+            <li data-target="#myCarousel3" data-slide-to="2"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>
+                  <a href="../images/akb/1240_1.jpg" class="thumbnail">
+                  <img src="../images/akb/1240_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/1240_2.jpg" class="thumbnail">
+                  <img src="../images/akb/1240_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>      
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1240_3.jpg" class="thumbnail">
+                  <img src="../images/akb/1240_3.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel3" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel3" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                      <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>42</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>40</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>34,2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>24,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>8</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>12,6</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>198х166х171</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>12,9</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 4 -->
+              <div id="evPanel4" class="tab-pane fade">  
+                <h3>SKAT SB 12В, 50Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel4" class="carousel slide" data-interval="3000" data-ride="carousel4" data-pause="hover">  
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel4" data-slide-to="1"></li> 
+            <li data-target="#myCarousel4" data-slide-to="2"></li>  
+            <li data-target="#myCarousel4" data-slide-to="3"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/akb/1250_1.jpg" class="thumbnail">
+                  <img src="../images/akb/1250_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>    
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/1250_2.jpg" class="thumbnail">
+                  <img src="../images/akb/1250_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>     
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1250_3.jpg" class="thumbnail">
+                  <img src="../images/akb/1250_3.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1250_4.jpg" class="thumbnail">
+                  <img src="../images/akb/1250_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel4" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel4" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                        <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>52</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>42,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>28</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>103</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>86</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>8,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>12,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>291х106х223(231)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>15,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 5 -->
+              <div id="evPanel5" class="tab-pane fade">  
+                <h3>SKAT SB 12В, 65Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel5" class="carousel slide" data-interval="3000" data-ride="carousel5" data-pause="hover">  
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel5" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel5" data-slide-to="1"></li> 
+            <li data-target="#myCarousel5" data-slide-to="2"></li>  
+            <li data-target="#myCarousel5" data-slide-to="3"></li> 
+          </ol> 
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>
+                  <a href="../images/akb/1265_1.jpg" class="thumbnail">    
+                  <img src="../images/akb/1265_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>   
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/1265_2.jpg" class="thumbnail">
+                  <img src="../images/akb/1265_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>   
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1265_3.jpg" class="thumbnail">
+                  <img src="../images/akb/1265_3.jpg" alt="" style="height: 300px;">
+                  </a>   
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1265_4.jpg" class="thumbnail">
+                  <img src="../images/akb/1265_4.jpg" alt="" style="height: 300px;">
+                  </a>   
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel5" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel5" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+                        <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>69</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>54</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>43,3</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>5,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>26</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>179х350х166</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>21</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 6 -->
+              <div id="evPanel6" class="tab-pane fade">  
+                <h3>SKAT SB 12В, 80Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel6" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel6" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel6" data-slide-to="1"></li>  
+            <li data-target="#myCarousel6" data-slide-to="2"></li>  
+            <li data-target="#myCarousel6" data-slide-to="3"></li>  
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/akb/1280_1.jpg" class="thumbnail">
+                  <img src="../images/akb/1280_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>       
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/1280_2.jpg" class="thumbnail">
+                  <img src="../images/akb/1280_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>    
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1280_3.jpg" class="thumbnail">
+                  <img src="../images/akb/1280_3.jpg" alt="" style="height: 300px;">  
+                  </a> 
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/1280_4.jpg" class="thumbnail">
+                  <img src="../images/akb/1280_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel6" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel6" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>77,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>75</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>64</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>42</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>103</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>86</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>9,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>18,75</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>562х115х187(196)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>24,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т23 (под болт М8)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 7 -->
+              <div id="evPanel7" class="tab-pane fade"> 
+                <h3>SKAT SB 12В, 100Ач</h3>  
+                <p>Представлен двумя модификациями: 
+                  <li><b>Стандартного</b> размера</li>
+                  <li><b>Фронт-терминальные</b> для установки в телекоммуникационных шкафах</li>
+    <div class="row">
+      <div class="col-md-12">  
+          <div id="myCarousel7" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel7" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel7" data-slide-to="1"></li>
+            <li data-target="#myCarousel7" data-slide-to="2"></li>  
+            <li data-target="#myCarousel7" data-slide-to="3"></li>  
+            <li data-target="#myCarousel7" data-slide-to="4"></li>  
+            <li data-target="#myCarousel7" data-slide-to="5"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>   
+                  <a href="../images/akb/12100_s_1.jpg" class="thumbnail"> 
+                  <img src="../images/akb/12100_s_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>    
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/12100_s_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12100_s_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>     
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12100_ft_1.jpg" class="thumbnail">
+                  <img src="../images/akb/12100_ft_1.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12100_ft_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12100_ft_2.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12100_ft_3.jpg" class="thumbnail">
+                  <img src="../images/akb/12100_ft_3.jpg" alt="" style="height: 300px;">  
+                  </a> 
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12100_ft_4.jpg" class="thumbnail">
+                  <img src="../images/akb/12100_ft_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div> 
+          <a class="carousel-control left" href="#myCarousel7" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel7" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>105 / 103*</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>103 / 100*</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>57 / 55*</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102 / 103*</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>6 / 5,35*</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>30 / 25*</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>328х172х217 / 410х110х287(295)*</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>29</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6) / Т23 (под болт М8)*</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>  
+                      <p style="font-size: 12px">* В зависимости от выбранного типа АКБ                       
+                      </p>                    
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 8 -->
+              <div id="evPanel8" class="tab-pane fade"> 
+                <h3>SKAT SB 12В, 120Ач</h3>  
+    <div class="row">
+      <div class="col-md-12"> 
+          <div id="myCarousel8" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover">  
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel8" data-slide-to="1"></li> 
+            <li data-target="#myCarousel8" data-slide-to="2"></li>  
+          </ol>    
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/akb/12120_1.jpg" class="thumbnail">
+                  <img src="../images/akb/12120_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>    
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/12120_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12120_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>     
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12120_3.jpg" class="thumbnail">
+                  <img src="../images/akb/12120_3.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel8" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel8" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>128</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>120</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>196</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>74</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>9</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>36</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>406х174х233</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>35</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 9 -->
+              <div id="evPanel9" class="tab-pane fade"> 
+                <h3>SKAT SB 12В, 125Ач</h3>  
+    <div class="row">
+      <div class="col-md-12">    
+          <div id="myCarousel9" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel9" data-slide-to="1"></li>
+            <li data-target="#myCarousel9" data-slide-to="2"></li>  
+            <li data-target="#myCarousel9" data-slide-to="3"></li>  
+            <li data-target="#myCarousel9" data-slide-to="4"></li> 
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/akb/12125_1.jpg" class="thumbnail">
+                  <img src="../images/akb/12125_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>     
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/12125_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12125_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>       
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12125_3.jpg" class="thumbnail">
+                  <img src="../images/akb/12125_3.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12125_4.jpg" class="thumbnail">
+                  <img src="../images/akb/12125_4.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12125_5.jpg" class="thumbnail">
+                  <img src="../images/akb/12125_5.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel9" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel9" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>131,2</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>125</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>106,3</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>75</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>103</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>86</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>5,2</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>31,2</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>566х110х288(296)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>39,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т23 (под болт М8)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 10 -->
+              <div id="evPanel10" class="tab-pane fade"> 
+               <h3>SKAT SB 12В, 150Ач</h3> 
+    <div class="row">
+      <div class="col-md-12">   
+          <div id="myCarousel10" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel10" data-slide-to="0" class="active"></li> 
+            <li data-target="#myCarousel10" data-slide-to="1"></li>
+            <li data-target="#myCarousel10" data-slide-to="2"></li>  
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>    
+                  <a href="../images/akb/12150_1.jpg" class="thumbnail">
+                  <img src="../images/akb/12150_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>      
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/12150_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12150_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>     
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12150_3.jpg" class="thumbnail">
+                  <img src="../images/akb/12150_3.jpg" alt="" style="height: 300px;">   
+                  </a>
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+            </div>  
+          <a class="carousel-control left" href="#myCarousel10" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel10" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>162</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>150</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>123</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>103</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>3</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>45</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>487х170х241</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>43</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т7 (под болт М6)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                
+                    </div>
+                  </div>
+                </p>
+              </div>
+              <!-- Панель 11 -->
+              <div id="evPanel11" class="tab-pane fade"> 
+                <h3>SKAT SB 12В, 200Ач</h3> 
+    <div class="row">
+      <div class="col-md-12">    
+          <div id="myCarousel11" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+          <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>      
+            <li data-target="#myCarousel11" data-slide-to="1"></li>  
+            <li data-target="#myCarousel11" data-slide-to="2"></li>  
+            <li data-target="#myCarousel11" data-slide-to="3"></li>  
+          </ol>     
+            <div class="carousel-inner">
+              <div class="active item"> 
+                <center>   
+                  <a href="../images/akb/12200_1.jpg" class="thumbnail"> 
+                  <img src="../images/akb/12200_1.jpg" alt="" style="height: 300px;" href="#evPanel2" class="img-fluid d-block w-100">
+                  </a>
+                </center>                 
+              </div>      
+              <div class="item">   
+                <center>
+                  <a href="../images/akb/12200_2.jpg" class="thumbnail">
+                  <img src="../images/akb/12200_2.jpg" alt="" style="height: 300px;" >
+                  </a>
+                </center>
+                <div class="carousel-caption">                    
+                </div>     
+              </div>       
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12200_3.jpg" class="thumbnail">
+                  <img src="../images/akb/12200_3.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div> 
+              <div class="item">    
+                <center>
+                  <a href="../images/akb/12200_4.jpg" class="thumbnail">
+                  <img src="../images/akb/12200_4.jpg" alt="" style="height: 300px;"> 
+                  </a>  
+                </center>
+                <div class="carousel-caption">                  
+                </div>    
+              </div>
+            </div>  
+          <a class="carousel-control left" href="#myCarousel11" data-slide="prev">    
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+          </a>  
+          <a class="carousel-control right" href="#myCarousel11" data-slide="next">    
+            <span class="glyphicon glyphicon-chevron-right"></span>  
+          </a>
+        </div>
+        <div>        
+          <table class="table table-bordered table-striped" style="font-size: 12px;">
+                          <thead>
+                            <tr>
+                              <td>№ п/п</td>
+                              <td colspan="2">Наименование параметра</td>
+                              <td>Значение параметра</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td colspan="2">Номинальное напряжение, В</td>
+                              <td><strong>12</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">2</td>
+                              <td rowspan="4">Номинальная емкость, Ач (при 25&#176;С)</td>
+                              <td>Через 20 часов (ток разряда - 0,05С)</td>
+                              <td><strong>220</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 10 часов (ток разряда - 0,1С)</td>
+                              <td><strong>203</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 5 часов (ток разряда - 0,2С)</td>
+                              <td><strong>187</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Через 1 час (ток разряда - 1С)</td>
+                              <td><strong>132</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="4">3</td>
+                              <td rowspan="4">% емкости через 20 часов в зависимости от температуры эксплуатации</td>
+                              <td>при 40&#176;С</td>
+                              <td><strong>102</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при25&#176;С</td>
+                              <td><strong>100</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при 0&#176;С</td>
+                              <td><strong>85</strong></td>
+                            </tr>
+                            <tr>
+                              <td>при -15&#176;С</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td colspan="2">Внутреннее сопротивление, мОм (при 25&#176;С и полностью заряженной АКБ)</td>
+                              <td><strong>2,2</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">5</td>
+                              <td rowspan="2">Заряд постоянным напряжением (при 25&#176;С)</td>
+                              <td>Циклический режим, В</td>
+                              <td><strong>14,4  &#247; 15,0</strong></td>
+                            </tr>
+                            <tr>
+                              <td>Буферный режим, В</td>
+                              <td><strong>13,5  &#247; 13,8</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td colspan="2">Максимальный ток заряда, А</td>
+                              <td><strong>60</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">7</td>
+                              <td rowspan="3">% емкости после хранения (при 25&#176;С)</td>
+                              <td>3 месяца</td>
+                              <td><strong>92</strong></td>
+                            </tr>
+                            <tr>
+                              <td>6 месяцев</td>
+                              <td><strong>83</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12 месяцев</td>
+                              <td><strong>65</strong></td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td colspan="2">Габаритные размеры ШхГхВ без упаковки, мм, не более</td>
+                              <td><strong>522х220х222</strong></td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td colspan="2">Масса без упаковки, не более, кг</td>
+                              <td><strong>60,5</strong></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">10</td>
+                              <td rowspan="3">Диапазон рабочих температур, &#176;С</td>
+                              <td>заряд</td>
+                              <td><strong>от -10 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>разряд</td>
+                              <td><strong>от -20 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>хранение</td>
+                              <td><strong>от -35 до +50</strong></td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td colspan="2">Тип клеммы</td>
+                              <td><strong>Т11 (под болт М8)</strong></td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td colspan="2">Срок службы</td>
+                              <td><strong>12 лет</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>   
+        </div>
+      </div>
+
+  <div class="form answer">
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="request">Получить персональное предложение</span></p>
+        <form action="" method="get">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Иван Иванов">
+        </label>       
+        <label>
+          Электронная почта:
+          <input type="email" name="email" placeholder="example@email.com">
+        </label>
+        <label>
+          Номер телефона:
+          <input type="email" name="email" placeholder="+7-000-0000000">
+        </label>
+        <label>
+          Запрос:
+          <textarea name="comment" placeholder="Уточните необходимое количество и тип ИБП"></textarea>
+        </label>
+          <!-- Тип кнопки -->
+          <script type="text/javascript">  
+            $(document).ready(function(){ 
+              $("#myButton4").click(function(){
+                $(this).button('loading').delay(300).queue(function() {
+                $(this).button('complete');
+                $(this).dequeue();
+                });        
+              });
+            });   
+          </script>
+          <button type="button" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div> 
+  </div> 
+</main>
+<footer>
+  <div class="container text-center">      
+    <p class="year"><a href="https://www.reach-stacker.ru">А-Сервис</a>, 2024</p>
+  </div>
+</footer>
+  <script src="../js/jquery.backstretch.min.js">  </script>  
+  <script>
+      $.backstretch([
+      "/images/fon.jpg",
+      ], {
+      fade: 750,
+      duration: 8000
+    });
+    </script> 
+    <script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+    </script>
+</body>
+</html>
