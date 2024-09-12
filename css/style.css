@@ -1,6 +1,6 @@
 /* цвет фона и рамки навигационного меню */
 .navbar-default {
-    background-color: #88BDBC;
+    background-color: #75b3b2;  /* 89beb1 */
     border-color: #6E6658;
     border-width: 2px;
     border-top-width: 0px;
@@ -26,6 +26,7 @@
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #F5FFFA; /* Бегающая рамка по ссылкам */
+
 }
 .navbar-right a:hover,
 .navbar-right a:focus {
@@ -112,8 +113,8 @@ border-color: #254E58;
 
 
 body {
-padding-top:88px;
-background: #F2F2F2;
+padding-top: 88px;
+background: #e0e0e0;
 }
 
 .article {
@@ -204,4 +205,15 @@ button {
 }
 
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff !important;
+    background-color: #61a8a7 !important;
+}
+
+.tabnav {
+    color: black !important;    
+}
+.tabnav:hover {
+    text-shadow: 1px 1px 1px grey;
+}
 

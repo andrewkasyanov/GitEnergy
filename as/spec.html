@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>А-Сервис - Ваш проводник в мире ИБП</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo1.png">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<style>
+  .modal-open {
+    margin-right: -17px;
+    overflow: scroll;
+  }
+</style>
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
+  <div class="modal-dialog modal-lg">    
+    <div class="modal-content">      
+      <div class="modal-header">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X</span></button>        
+        <div class="modal-title">Просмотр
+        </div>      
+      </div>      
+      <div class="modal-body">  
+        <img class="img-responsive center-block" src="" alt=""> 
+      </div>      
+      <div class="modal-footer">        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
+      </div>    
+    </div>  
+  </div>
+</div>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html#key" id="key">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
+          <span class="navbar-text">А-Сервис</span>
+        </div>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a href="#">О нас<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="../index.html#contact">Контакты</a>
+              </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            <span class="glyphicon glyphicon-list"></span>
+              Каталог оборудования
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="../ups/ups_first.html">Домашние ИБП</a></li>
+              <li><a href="../ups/ups_second.html">ИБП исполнения RACK</a></li>
+              <li><a href="../ups/ups_third.html">Трёхфазные ИБП</a></li>
+              <li><a href="../ups/ups_four.html">Аккумуляторные батареи</a></li>
+              <li><a href="../ups/ups_five.html">Батарейные модули</a></li>
+              <li><a href="../ups/ups_six.html">Хранение АКБ</a></li>
+              <li><a href="../ups/ups_seven.html">Периферия</a></li>
+            </ul>
+          </li>
+          <!-- Конец -->
+          <li class="nav-item">
+            <a href="#">Сервисное обслуживание</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Пуско-наладочные работы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Тендеры</a>
+          </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-send"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+              </li>
+              <li><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <div class="article container" style="min-height: 550px;"> 
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <ul class="nav nav-pills nav-stacked" id="myTabEvents">  
+          <!-- Или nav-tabs -->              
+          <li class="active">
+            <a class="tabnav" data-toggle="tab" href="#evPanel1">Профиль</a>
+          </li>
+          <li>
+            <a class="tabnav" data-toggle="tab" href="#evPanel2">Наша миссия</a>
+          </li>
+          <li>
+            <a class="tabnav" data-toggle="tab" href="#evPanel3">Команда</a>
+          </li>
+          <li>
+            <a class="tabnav" data-toggle="tab" href="#evPanel4">Вакансии</a>
+          </li>
+          <li>
+            <a class="tabnav" data-toggle="tab" href="#evPanel5">Контакты</a>
+          </li>
+          <li>
+            <a class="tabnav" data-toggle="tab" href="#evPanel6">Реквизиты</a>
+          </li>
+        </ul>               
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div class="tab-content" id="myTabContent">
+          <!-- Панель №1 -->
+          <div id="evPanel1" class="tab-pane fade in active"> 
+            <h3>Профиль</h3> 
+            <p>Мы рады представить Вам нашу компанию <span style="font-size: 20px; font-weight: bold;">"А-Сервис"</span> - надежного поставщика источников бесперебойного питания. Наша основная цель — обеспечить надежное энергоснабжение для Вашего бизнеса, гарантируя полную защиту от перебоев в электроснабжении. Мы понимаем, насколько критично важно поддерживать бесперебойную работу оборудования, поэтому предлагаем решения, на которые Вы сможете положиться в любой ситуации.</p>
+            <p>Кроме того, мы всегда следим за последними тенденциями и новыми технологиями в области источников бесперебойного питания. Это позволяет нам обеспечивать Вас самыми современными и эффективными решениями, которые помогут минимизировать риски и финансовые потери, связанные с перебоями в энергоснабжении.</p>
+          </div>
+          <!-- Панель 2 -->
+          <div id="evPanel2" class="tab-pane fade">  
+            <h3>Наша миссия</h3>
+            <p>Мы гордимся тем, что можем предложить высококачественные продукты и услуги, которые помогают нашим клиентам развиваться и достигать успеха.</p>
+            <p>Наша миссия вдохновляет нас на работу каждый день, объединяя команду единой целью – делать мир лучше с помощью технологий.</p>
+          </div>
+          <!-- Панель 3 -->
+          <div id="evPanel3" class="tab-pane fade">  
+            <h3>Команда</h3>
+            <p>Наша команда состоит из высококвалифицированных специалистов, готовых предоставить индивидуальный подход к нуждам каждого клиента.</p> 
+            <p>Мы не просто продаем, мы внедряем технологии, адаптированные к Вашим требованиям. У нас Вы найдете широкий выбор источников бесперебойного питания от ведущих производителей, а также услуги по их установке и последующему обслуживанию.              
+            </p>
+          </div>
+          <!-- Панель 4 -->
+          <div id="evPanel4" class="tab-pane fade">  
+            <h3>Вакансии</h3>
+            <p>               
+            </p>
+          </div>
+          <!-- Панель 5 -->
+          <div id="evPanel5" class="tab-pane fade">  
+            <h3>Контакты</h3>
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <table class="table table-striped" style="font-size: 12px;">
+                  <thead>
+                    <tr>
+                      <td><strong>ОБЩИЕ КОНТАКТЫ</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Россия, 197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312, БЦ "Кантемировский"</td>                      
+                    </tr>
+                    <tr>
+                      <td>Телефон: 8 (800) 201 09 04</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail: info@energyparts.ru</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <table class="table table-striped" style="font-size: 12px;">
+                  <thead>
+                    <tr>
+                      <td><strong>КОММЕРЧЕСКАЯ СЛУЖБА</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Россия, 197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312, БЦ "Кантемировский"</td>                      
+                    </tr>
+                    <tr>
+                      <td>Телефон: 8 (921) 380 53 73</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail: kasyanovan@energyparts.ru</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <table class="table table-striped" style="font-size: 12px;">
+                  <thead>
+                    <tr>
+                      <td><strong>СЕРВИСНАЯ СЛУЖБА</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Россия, 197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312, БЦ "Кантемировский"</td>                      
+                    </tr>
+                    <tr>
+                      <td>Телефон: 8 (921) 380 53 73</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail: kasyanovan@energyparts.ru</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <table class="table table-striped" style="font-size: 12px;">
+                  <thead>
+                    <tr>
+                      <td><strong>ПРОТИВОДЕЙСТВИЕ КОРРУПЦИИ</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>E-mail: stop@energyparts.ru</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Панель 6 -->
+          <div id="evPanel6" class="tab-pane fade">  
+            <h3>Реквизиты</h3>
+            <p> 
+              <table class="table table-bordered table-striped" style="font-size: 12px;">
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Полное наименование</strong></td>
+                    <td>Общество с ограниченной ответственностью "А-Сервис"</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Сокращенное наименование</strong></td>
+                    <td>ООО "А-Сервис"</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Юридический адрес</strong></td>
+                    <td>Россия, 191144, Санкт-Петербург, ул.Новгородская, д.7, кв.2</td>
+                  </tr>
+                  <tr>
+                    <td>Фактический адрес<strong></strong></td>
+                    <td>Россия, 197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ИНН / КПП</strong></td>
+                    <td>7842210788 / 784201001</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ОГРН</strong></td>
+                    <td>1227800155252</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Расчетный счет</strong></td>
+                    <td>40702810501500165493</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Корреспондентский счет</strong></td>
+                    <td>30101810745374525104</td>
+                  </tr>
+                  <tr>
+                    <td><strong>БИК банка</strong></td>
+                    <td>044525104</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Банк</strong></td>
+                    <td>ООО "Банк Точка", г. Москва</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Генеральный директор</strong></td>
+                    <td>Барменков Денис Владимирович</td>
+                  </tr>
+                  <tr>
+                    <td><strong>E-mail</strong></td>
+                    <td>info@energyparts.ru</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Телефон / факс</strong></td>
+                    <td>8 (800) 201 09 04</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          </div>
+
+
+
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+</main>
+<footer>
+  <div class="container text-center">      
+    <p class="year"><a href="https://www.reach-stacker.ru" target="_blank">А-Сервис</a>, 2024</p>
+  </div>
+</footer>
+  <script src="../js/jquery.backstretch.min.js">  
+  </script>  
+  <script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+  </script>
+</body>
+</html>
