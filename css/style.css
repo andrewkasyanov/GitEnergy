@@ -101,8 +101,8 @@ border-color: #254E58;
 .nav-item:hover {
     background-color: #254E58;
 } 
-.dropdown:hover {
-    background-color: #254E58;
+/* .dropdown:hover {
+    background-color: #254E58; */
 }
 .navbar .navbar-header > .navbar-text {
     color: #F5FFFA !important;
