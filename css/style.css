@@ -80,12 +80,14 @@
     background-color: #F5FFFA;
 }
 /* Цвет пунктов меню в раскрывающихся списках */
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a 
     {
-        color: #254E58;
+        color: #F5FFFA;
+        background-color: #75b3b2;
   }
 }
+
 /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -101,11 +103,11 @@ border-color: #254E58;
 .nav-item:hover {
     background-color: #254E58;
 } 
-/* .dropdown:hover {
-    background-color: #254E58; */
+.dropdown:hover {
+    background-color: #254E58; 
 }
 .navbar .navbar-header > .navbar-text {
-    color: #F5FFFA !important;
+    color: #F5FFFA;
 }
 
 
