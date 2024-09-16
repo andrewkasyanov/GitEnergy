@@ -88,14 +88,20 @@
   <div class="row">
     <style type="text/css">
       .item{             
-        text-align: center;   
+        text-align: center;
+        height: 400px !important;   
       }
       .carousel {
         margin-top: -5px;
       }
+      .carousel-inner > .item > img {
+        width: auto;
+        height: 400px !important;
+      }
+
     </style>
     <div class="col-md-12">
-      <div id="myCarousel" class="carousel carousel-dark slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
+      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" data-pause="hover"> 
       <ol class="carousel-indicators">   
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li> 
@@ -110,47 +116,47 @@
         <div class="carousel-inner">
           <div class="active item"> 
             <center> 
-              <img src="images/ups/477_skat_6000_3.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/477_skat_6000_3.jpg" alt="" style="height: 400px;">
             </center>                 
           </div>      
           <div class="item">   
             <center>
-              <img src="images/ups/477_skat_6000_8.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/477_skat_6000_8.jpg" alt="" style="height: 400px;">
             </center> 
           </div>     
           <div class="item">    
             <center>
-              <img src="images/ups/8938_rapan_3000_1.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/8938_rapan_3000_1.jpg" alt="" style="height: 400px;">
             </center>
           </div> 
           <div class="item">    
             <center>
-              <img src="images/ups/8950_skat_1000_7.jpg" alt="" style="height: 400px;"> 
+              <img class="img-fluid" src="images/ups/8950_skat_1000_7.jpg" alt="" style="height: 400px;"> 
             </center>
           </div>
           <div class="item">    
             <center>
-              <img src="images/ups/8950_skat_1000_6.jpg" alt="" style="height: 400px;"> 
+              <img class="img-fluid" src="images/ups/8950_skat_1000_6.jpg" alt="" style="height: 400px;"> 
             </center>
           </div> 
           <div class="item">    
             <center>
-              <img src="images/ups/8937_rapan_2000_8.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/8937_rapan_2000_8.jpg" alt="" style="height: 400px;">
             </center>
           </div> 
           <div class="item">    
             <center>
-              <img src="images/ups/8987_80_1.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/8987_80_1.jpg" alt="" style="height: 400px;">
             </center>
           </div>  
           <div class="item">    
             <center>
-              <img src="images/ups/8987_80_2.jpg" alt="" style="height: 400px;">
+              <img class="img-fluid" src="images/ups/8987_80_2.jpg" alt="" style="height: 400px;">
             </center>
           </div>  
           <div class="item">    
             <center>
-              <img src="images/ups/pr_1.jpg" alt="" style="height: 400px;"> 
+              <img class="img-fluid" src="images/ups/pr_1.jpg" alt="" style="height: 400px;"> 
             </center>
           </div>
         </div>  
@@ -163,7 +169,7 @@
       </div>
     </div>
   </div>
- 
+  <div class="row">
     <div class="col-lg-12 col-xs-12">
       <center>
       <h3 class="h4 page-header" style="line-height: 1.5;">В современном мире стабильное электроснабжение – это не роскошь, а необходимость.<br>Отключение электричества может привести к потере данных, повреждению оборудования и срыву важных задач.<br>
@@ -205,12 +211,10 @@
       </h4>
     </div>  
     <div class="col-lg-7 col-xs-12">
-      <h3 class="h4 page-header" style="line-height: 2;">Компания "А-Сервис" профессионально занимается <a href="as/404.html" class="aservice">пуско-наладочными работами</a> источников бесперебойного питания компании "Бастион" (SKAT-UPS&#8482;), их <a href="as/404.html" class="aservice">технической поддержкой</a>, а также <a href="as/404.html" class="aservice">сервисным обслуживанием</a>.</h3>
+      <h3 class="h4 page-header" style="line-height: 2; margin-top: 0px;">Компания "А-Сервис" профессионально занимается <a href="as/404.html" class="aservice">пуско-наладочными работами</a> источников бесперебойного питания компании "Бастион" (SKAT-UPS&#8482;), их <a href="as/404.html" class="aservice">технической поддержкой</a>, а также <a href="as/404.html" class="aservice">сервисным обслуживанием</a>.</h3>
     </div>
     <div class="col-lg-5 col-xs-12">
-      <h2 class="h3 page-header">
-        <img src="images/pr/bat_13.jpg" style="height: 350px; width: 450px;">
-      </h2>
+        <img src="images/pr/bat_13.jpg" class="img-fluid" style="max-width: 100%; height: auto;">
     </div>
     <div class="col-lg-12 col-xs-12">
       <h2 class="h3 page-header" style="line-height: 1.5;">
@@ -271,6 +275,33 @@
 
 
 <script src="js/jquery.backstretch.min.js"></script>  
+<script>
+  window.onresize = changeLayout;
+function changeLayout(){
+    var carousel = document.getElementById('carousel');
+    var children = carousel.getElementsByTagName('div');
+    var length = children.length;
+    var w = window.innerWidth;
+    if(w < 600){
+        carousel.className = 'carousel-inner';
+        for(var i = 0; i < length; i++){
+            if(i == 0){
+                children[i].className = 'item active';
+                continue;
+            }
+            children[i].className = 'item';
+        }
+        $('#carousel').carousel({interval:1500});
+    }
+    else{
+        carousel.className = 'row'; 
+        for(var i = 0; i < length; i++){
+            children[i].className = 'col-md-6';        
+        }
+    }
+}
+changeLayout();
+</script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* цвет фона и рамки навигационного меню */
 .navbar-default {
-    background-color: #75b3b2;  /* 89beb1 */
+    background-color: #254E58;  /* 75b3b2 */
     border-color: #6E6658;
     border-width: 2px;
     border-top-width: 0px;
@@ -16,7 +16,7 @@
 /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #254E58; 
+    color: #75b3b2; 
 }
 /* Цвет пунктов навигационного меню */
 .navbar-default .navbar-nav > li > a {
@@ -45,7 +45,7 @@
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
     color: #F5FFFA; /* текст открытого меню */
-    background-color: #254E58; /* заливка открытого меню */
+    background-color: #75b3b2; /* заливка открытого меню */
 }
 /* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
 .navbar-default .navbar-nav > .dropdown > a .caret {
@@ -68,12 +68,12 @@
 /* CSS стили для мобильных устройств */
 /* Цвет рамки у кнопки, которая открывает меню */
 .navbar-default .navbar-toggle {
-    border-color: #254E58;
+    border-color: #75b3b2;
 }
 /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #254E58;
+    background-color: #75b3b2;
 }
 /* Цвет полосочек в кнопочке, которая открывает меню */
 .navbar-default .navbar-toggle .icon-bar {
@@ -84,7 +84,7 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a 
     {
         color: #F5FFFA;
-        background-color: #75b3b2;
+        background-color: #254E58;
   }
 }
 
@@ -92,19 +92,19 @@
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #F5FFFA;
-    background-color: #254E58;
+    background-color: #75b3b2;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-border-color: #254E58;
+border-color: #75b3b2;
 }
 
 /* Цвет NAV при наведении курсора */
 .nav-item:hover {
-    background-color: #254E58;
+    background-color: #75b3b2;
 } 
 .dropdown:hover {
-    background-color: #254E58; 
+    background-color: #75b3b2; 
 }
 .navbar .navbar-header > .navbar-text {
     color: #F5FFFA;
