@@ -108,6 +108,7 @@ border-color: #254E58;
 }
 .navbar .navbar-header > .navbar-text {
     color: #F5FFFA;
+    position: absolute;
 }
 
 
@@ -265,4 +266,12 @@ button {
   }
   .copyright p{
     border-top:1px solid rgba(255,255,255,.1);} 
+}
+.aservice {
+  color: darkred;
+  text-decoration: none;
+}
+.aservice:hover {
+  color: black;
+  text-decoration: none;
 }
