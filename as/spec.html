@@ -13,10 +13,81 @@
 </head>
 <body>
 
-<!-- <style>
-  .modal-open {
-    margin-right: -17px;
-    overflow: scroll;
+<style>
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #myImg:hover {opacity: 0.7;}
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
   }
 </style>
 <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
@@ -24,7 +95,7 @@
     <div class="modal-content">      
       <div class="modal-header">        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span></button>        
+          <span aria-hidden="true"></span></button>        
         <div class="modal-title">
         </div>      
       </div>      
@@ -36,7 +107,7 @@
       </div>    
     </div>  
   </div>
-</div> -->
+</div>
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -138,17 +209,50 @@
             <h3>Профиль</h3> 
             <p>Мы рады представить Вам нашу компанию <span style="font-size: 18px; font-weight: bold;">"А-Сервис"</span> - надежного поставщика источников бесперебойного питания. Наша основная цель — обеспечить надежное энергоснабжение для Вашего бизнеса, гарантируя полную защиту от перебоев в электроснабжении. Мы понимаем, насколько критично важно поддерживать бесперебойную работу оборудования, поэтому предлагаем решения, на которые Вы сможете положиться в любой ситуации.</p>
             <p>Кроме того, мы всегда следим за последними тенденциями и новыми технологиями в области источников бесперебойного питания. Это позволяет нам обеспечивать Вас самыми современными и эффективными решениями, которые помогут минимизировать риски и финансовые потери, связанные с перебоями в энергоснабжении.</p>
-            <p style="padding-top: 15px; font-style: italic;">Дилерские сертификаты</p>
-
-            
-</div>
-         
-
+            <p style="padding-top: 15px; font-style: italic;">Дилерские сертификаты
+            </p>
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <a href="../images/as/a-service.jpg" class="thumbnail" style="border: 0; background-color: inherit;">
+                  <img class="img-fluid" src="../images/as/a-service.jpg" width="150px;" height="auto;">
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <a href="../images/as/engineer.jpg" class="thumbnail" style="border: 0; background-color: inherit;">
+                  <img class="img-fluid" src="../images/as/engineer.jpg" width="161px;" height="auto;">
+                </a>
+              </div>
+            </div>            
+          </div>  
           <!-- Панель 2 -->
           <div id="evPanel2" class="tab-pane fade">  
             <h3>Наша миссия</h3>
-            <p>Мы гордимся тем, что можем предложить высококачественные продукты и услуги, которые помогают нашим клиентам развиваться и достигать успеха.</p>
-            <p>Наша миссия вдохновляет нас на работу каждый день, объединяя команду единой целью – делать мир лучше с помощью технологий.</p>
+            
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <img src="../images/as/IMG_1222.jpeg" style="max-width: 100%;">
+              </div>
+              <div class="col-md-7 col-sm-12" style="line-height: 2; height: 150px;">
+                Наша компания стремится стать лидером в области продажи и монтажа источников бесперебойного питания (ИБП), обеспечивая надежность и безопасность электрообеспечения для предприятий различных масштабов. Наша миссия заключается в том, чтобы предоставить клиентам высококачественные решения, способствующие бесперебойной работе их бизнес-процессов, даже в условиях нестабильного энергоснабжения.
+              </div>
+              <div class="clearfix"></div>
+              <p></p>
+              <div class="col-md-7 col-sm-12" style="line-height: 2;">
+                Мы ставим перед собой задачи по постоянному улучшению качества предлагаемой продукции и услуг, адаптации к меняющимся потребностям рынка и внедрению инновационных технологий. Наша команда экспертов проводит глубокий анализ специфики каждого клиента, что позволяет нам предлагать индивидуальные решения, соответствующие уникальным требованиям.
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img src="../images/as/IMG_1217.jpeg" style="max-width: 100%;">
+              </div>
+              <div class="clearfix"></div>
+              <p></p>              
+              <div class="col-md-7 col-sm-12">
+                <img src="../images/as/reach.JPG" style="max-width: 100%;">
+              </div>
+              <div class="col-md-5 col-sm-12" style="line-height: 2;">
+                В качестве методов решения задач мы используем только проверенные бренды ИБП и современные методики монтажа, а также обеспечиваем высококлассное сервисное сопровождение. Мы уверены, что наша целеустремленность и профессионализм будут способствовать служению интересам клиентов и укреплению их доверия к нашей компании. Обеспечьте себя и свой бизнес надежностью — выбирайте нашу компанию как надежного партнера в мире ИБП.
+              </div>
+            </div>
+            
           </div>
           <!-- Панель 3 -->
           <div id="evPanel3" class="tab-pane fade">  
@@ -160,7 +264,7 @@
           <!-- Панель 4 -->
           <div id="evPanel4" class="tab-pane fade">  
             <h3>Вакансии</h3>
-            <p>               
+            <p>- Менеджер по продажам (офис Санкт-Петербург), <a href="#">hh@emergencyparts.ru</a>               
             </p>
           </div>
           <!-- Панель 5 -->
@@ -191,7 +295,7 @@
                 <table class="table table-striped" style="font-size: 12px;">
                   <thead>
                     <tr>
-                      <td><strong>КОММЕРЧЕСКАЯ СЛУЖБА</strong></td>
+                      <td><strong>ОТДЕЛ ПРОДАЖ</strong></td>
                     </tr>
                   </thead>
                   <tbody>
@@ -241,6 +345,16 @@
                   </tbody>
                 </table>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div style="position:relative;overflow:hidden;">
+                  <a href="https://yandex.ru/maps/org/a_servis/183422716403/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">А-Сервис</a>
+                  <a href="https://yandex.ru/maps/2/saint-petersburg/category/specialized_vehicles_spare_parts/37912439240/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Запчасти для спецтехники в Санкт‑Петербурге</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323199%2C59.975937&mode=poi&poi%5Bpoint%5D=30.321824%2C59.974991&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D183422716403&z=17" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative; width: 100%; border-radius: 30px;">
+                  </iframe>
+                </div>
+              </div>              
             </div>
           </div>
           <!-- Панель 6 -->
@@ -359,7 +473,7 @@
 
   <script src="../js/jquery.backstretch.min.js">  
   </script>  
-  <!-- <script>
+<script>
     // После загрузки DOM-дерева (страницы)
     $(function() {       
     //при нажатии на ссылку, содержащую Thumbnail  
@@ -379,6 +493,6 @@
           $("#image-modal").modal('hide')  
         });
       });
-  </script> -->
+    </script>
 </body>
 </html>
