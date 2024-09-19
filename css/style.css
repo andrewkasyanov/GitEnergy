@@ -124,7 +124,7 @@ background: #e0e0e0;
 background: #f5f5f5; /* rgba(255,255,255,0.78) */
 padding-top: 20px;
 margin-bottom: 10px;
-border-radius: 30px;
+border-radius: 15px;
 } 
 
 .yandex {
@@ -275,4 +275,19 @@ button {
 .aservice:hover {
   color: black;
   text-decoration: none;
+}
+.apasport {
+    margin-left: 20px; 
+    text-decoration: none;
+    font-size: 11px;
+    color: darkred;
+}
+.apasport:hover {
+    color: black;
+    text-decoration: none;
+}
+/* Цвет значков почты и пр */
+.navbar-default .navbar-nav > li > a.message:hover,
+.navbar-default .navbar-nav > li > a.message:focus {
+    color: #75b3b2; 
 }
