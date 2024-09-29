@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>А-Сервис - Ваш проводник в мире ИБП</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo1.png">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+   
+</head>
+<body>
+
+<style>
+  .modal-open {
+    margin-right: -17px;
+    overflow: scroll;
+  }
+  .glyphicon-flash {
+    font-size: 40px;
+    padding-top: 15px;
+    color: darkred;
+  }
+  .glyphicon-flash:hover,
+  .glyphicon-flash:focus {
+    color: #EF6762; 
+}
+.thumbnail {
+  background-color: #f5f5f5;
+}
+</style>
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
+  <div class="modal-dialog modal-lg">    
+    <div class="modal-content">     
+      <div class="modal-body">  
+        <img class="img-responsive center-block" src="" alt="" style="max-width: 100%;"> 
+      </div>      
+       
+    </div>  
+  </div>
+</div>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html#key" id="key">
+            <span class="glyphicon glyphicon-home"></span>
+          </a>
+          <span class="navbar-text">А-Сервис</span>
+        </div>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html">Главная</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <span class="glyphicon glyphicon-list"></span>
+                  Каталог оборудования
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a href="../ups/ups_first.html">Домашние ИБП</a></li>
+                  <li><a href="../ups/ups_second.html">ИБП исполнения RACK</a></li>
+                  <li><a href="../ups/ups_third.html">Трёхфазные ИБП</a></li>
+                  <li><a href="../ups/ups_four.html">Аккумуляторные батареи</a></li>
+                  <li><a href="../ups/ups_five.html">Батарейные модули</a></li>
+                  <li><a href="../ups/ups_six.html">Хранение АКБ</a></li>
+                  <li><a href="../ups/ups_seven.html">Периферия</a></li>
+                </ul>
+              </li>
+              <!-- Конец -->
+              <li class="nav-item">
+                <a href="../as/service.html">Сервисное обслуживание</a>
+              </li>
+              <li class="nav-item">
+                <a href="../as/installation.html">Пуско-наладочные работы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Тендеры</a>
+              </li>
+              <li class="nav-item">
+                <a href="../as/spec.html">О нас<span class="sr-only">(current)</span></a>
+              </li> 
+              <li class="nav-item">
+                <a href="../index.html#contact">Контакты</a>
+              </li>             
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="message" href="#"><span class="glyphicon glyphicon-send"></span></a>
+              </li>
+              <li><a class="message" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+              </li>
+              <li><a class="message" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <div class="article container"> 
+    <div class="row" style="line-height: 2; font-size: 15px;">
+      <div class="col-md-12 col-sm-12">
+        <h3 class="h3 page header" style="line-height: 1.5;">Пуско-наладочные работы</h3>
+      </div>
+      <div class="col-md-12 col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+        <center>
+          <div class="examplecarusel"><div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">  
+            <ol class="carousel-indicators"> 
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>   
+              <li data-target="#myCarousel" data-slide-to="2"></li>  
+              <li data-target="#myCarousel" data-slide-to="3"></li>   
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>   
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>   
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+              <li data-target="#myCarousel" data-slide-to="9"></li>   
+              <li data-target="#myCarousel" data-slide-to="10"></li>
+            </ol>
+            <div class="carousel-inner"> 
+              <div class="active item">
+                <a href="../images/pr/bat_1.jpg" class="thumbnail" style="border: 0;">
+                <img src="../images/pr/bat_1.jpg" style="height: 500px;">   
+                </a>    
+              </div>    
+              <div class="item">
+                <a href="../images/pr/bat_4.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_4.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_5.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_5.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_6.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_6.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_7.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_7.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_8.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_8.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_9.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_9.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_10.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_10.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_11.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_11.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_12.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_12.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+              <div class="item">
+                <a href="../images/pr/bat_13.jpg" class="thumbnail" style="border: 0;">  
+                <img src="../images/pr/bat_13.jpg" style="height: 500px;">  
+                </a>
+              </div>  
+            </div> 
+          </div> 
+        </center>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        Компания А-Сервис предлагает комплексные услуги по пуско-наладочным работам источников бесперебойного питания Бастион (SKAT&trade;), удовлетворяющим самым высоким требованиям современных предприятий. Мы специализируемся на разработке технического задания для серверных комнат, учитывая индивидуальные особенности и потребности каждого клиента. Наши эксперты тщательно анализируют текущую инфраструктуру и создают оптимальное решение для бесперебойного электроснабжения.
+      </div>
+      
+      <div class="col-md-12 col-sm-12">
+        Мы обеспечиваем полный цикл работ, начиная от проектирования и монтажа электрооборудования, до первичной настройки и тестирования систем. В процессе реализации проектов мы применяем только современное высококачественное оборудование, что гарантирует надежность и эффективность работы всех компонентов системы.
+      </div>
+      
+      <div class="col-md-12 col-sm-12">
+        Наша команда состоит из квалифицированных специалистов, обладающих многолетним опытом в области пуско-наладочных работ. Мы стремимся к обеспечению наилучших результатов и полного удовлетворения требований клиентов. Сотрудничая с компанией А-Сервис, вы получаете надежного партнера, обеспечивающего бесперебойную работу ваших источников электроснабжения и минимизацию рисков простоя бизнеса.
+      </div>
+      
+      <div class="col-md-12 col-sm-12">
+        Мы также предлагаем услуги по регулярному техническому обслуживанию и мониторингу систем бесперебойного питания, что позволяет своевременно выявлять и устранять возможные неисправности. Наша команда профессионалов осуществляет плановые проверки и тестирование оборудования, что гарантирует его работоспособность в критических ситуациях. Используя передовые технологии, мы обеспечиваем круглосуточный контроль за состоянием ваших систем.
+      </div>
+      
+      <div class="col-md-12 col-sm-12">
+        Кроме того, мы предоставляем обучение для ваших сотрудников, чтобы они могли эффективно управлять и обслуживать оборудование. Это важно для обеспечения стабильной работы и минимизации потенциальных рисков, связанных с перебоями в электроснабжении. Мы верим, что обучение является ключевым элементом в поддержании надежности систем и уверенности в их функционировании.
+      </div>
+      
+      <div class="col-md-12 col-sm-12">
+        Компания А-Сервис гордится своим индивидуальным подходом к каждому клиенту. Мы стремимся не просто предложить стандартные решения, а создать уникальную систему, максимально соответствующую потребностям вашего бизнеса. С нами вы можете быть уверены, что ваши источники бесперебойного питания будут работать на высшем уровне.
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 col-sm-12" style="padding-top: 30px;">
+        <center>        
+          <div class="form answer">
+              <div class="row">
+                <div class="col-md-12">
+                  <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
+                  <form action="" method="get">
+                  <label>
+                    Ваше имя:
+                    <input type="text" name="name" placeholder="Иван Иванов">
+                  </label>       
+                  <label>
+                    Электронная почта:
+                    <input type="email" name="email" placeholder="example@email.com">
+                  </label>
+                  <label>
+                    Номер телефона:
+                    <input type="email" name="email" placeholder="+7-000-0000000">
+                  </label>
+                  <label>
+                    Запрос:
+                    <textarea name="comment" placeholder="Уточните проявление неисправности"></textarea>
+                  </label>
+                    <script type="text/javascript">  
+                      $(document).ready(function(){ 
+                        $("#myButton4").click(function(){
+                          $(this).button('loading').delay(300).queue(function() {
+                          $(this).button('complete');
+                          $(this).dequeue();
+                          });        
+                        });
+                      });   
+                    </script>
+                    <button type="button" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#">
+                      Отправить
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </center>
+      </div>
+     
+
+    </div>
+  </div>
+
+
+</main>
+<!-- Footer -->
+<div class="mt-5 pt-5 pb-5 footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12 about-company">
+        <h2 
+          style="font-size: 30px !important;
+          font-family: inherit !important; 
+          color: inherit !important; 
+          padding-top: 10px;
+          line-height: 2em;
+          margin: 0;          
+          ">А-Сервис</h2>
+        <p class="pr-5 text-white-50">Благодарим Вас за интерес к нашей компании. Мы рады помочь Вам в решении задач Вашего бизнеса.</p>
+        <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+      </div>
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Клиентам</h4>
+          <ul class="m-0 p-0">
+            <li>- <a href="../as/service.html">Сервисное обслуживание</a></li>
+            <li>- <a href="../as/installation.html">Пуско-наладочные работы</a></li>
+            <li>- <a href="../as/404.html">Тендерная поддержка</a></li>
+            <li>- <a href="../as/spec.html">О нас</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Контакты</h4>
+        <p>197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312</p>
+        <p class="mb-0"><span class="glyphicon glyphicon-phone-alt"></span> +7 800 201 09 04</p>
+        <p><span class="glyphicon glyphicon-envelope"></span><a href="#"> info@emergencyparts.ru</a></p>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 2px;">
+      <div class="col copyright">
+        <p style="text-align: left;"><small class="text-white-50">© 2024 Сайт создан и обслуживается Партнером Бастион | Skat</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="../js/jquery.backstretch.min.js">  </script>  
+  
+    <script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        }); 
+
+
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+    </script>
+
+
+</body>
+</html>
