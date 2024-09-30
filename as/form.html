@@ -18,25 +18,31 @@
     margin-right: -17px;
     overflow: scroll;
   }
+  .glyphicon-flash {
+    font-size: 40px;
+    padding-top: 15px;
+    color: darkred;
+  }
+  .glyphicon-flash:hover,
+  .glyphicon-flash:focus {
+    color: #EF6762; 
+}
+.thumbnail {
+  background-color: #f5f5f5;
+}
 </style>
 <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
   <div class="modal-dialog modal-lg">    
-    <div class="modal-content">      
-      <div class="modal-header">        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span></button>        
-        <div class="modal-title">Просмотр
-        </div>      
-      </div>      
+    <div class="modal-content">     
       <div class="modal-body">  
-        <img class="img-responsive center-block" src="" alt=""> 
+        <img class="img-responsive center-block" src="" alt="" style="max-width: 100%;"> 
       </div>      
-      <div class="modal-footer">        
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
-      </div>    
-    </div>  
+</div>  
   </div>
 </div>
+
+
+
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -94,7 +100,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a class="message" href="#"><span class="glyphicon glyphicon-send"></span></a>
               </li>
-              <li><a class="message" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+              <li><a class="message" href="mailto:info@emergencyparts.ru?subject=Запрос с сайта Emergencyparts.ru"><span class="glyphicon glyphicon-envelope"></span></a>
               </li>
               <li><a class="message" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
               </li>
@@ -108,13 +114,55 @@
 <main>
   <div class="article container" style="min-height: 550px;"> 
     <div class="row">
-      <div>
-        
+     <div class="col-md-12 col-sm-12" style="padding-top: 30px;">
+        <center>  
+
+
+         <div class="form answer">
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
+        <form action="../php/sendmail.php" method="post">
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Иван Иванов">
+        </label>       
+        <label>
+          Электронная почта:
+          <input type="text" name="email" placeholder="example@email.com">
+        </label>
+        <label>
+          Номер телефона:
+          <input type="text" name="phone" placeholder="+7-000-0000000">
+        </label>
+        <label>
+          Запрос:
+          <textarea name="message" placeholder="Уточните проявление неисправности"></textarea>
+        </label>
+          <script type="text/javascript">  
+            $(document).ready(function(){ 
+              $("#myButton4").click(function(){
+                $(this).button('loading').delay(300).queue(function() {
+                $(this).button('complete');
+                $(this).dequeue();
+                });        
+              });
+            });   
+          </script>
+          <button type="success" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#" value="Отправить сообщение">
+            Отправить
+          </button>
+
+<input class="btn btn-success" type="submit" value="Отправить">
+
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 
-
-        
+        </center>
       </div>
     </div>
   </div>
@@ -150,7 +198,7 @@
         <h4 class="mt-lg-0 mt-sm-4">Контакты</h4>
         <p>197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312</p>
         <p class="mb-0"><span class="glyphicon glyphicon-phone-alt"></span> +7 800 201 09 04</p>
-        <p><span class="glyphicon glyphicon-envelope"></span><a href="#"> info@emergencyparts.ru</a></p>
+        <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@emergencyparts.ru?subject=Запрос с сайта Emergencyparts.ru"> info@emergencyparts.ru</a></p>
       </div>
     </div>
     <div class="row" style="margin-left: 2px;">
@@ -160,6 +208,63 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  const form = document.forms["form"];
+const formArr = Array.from(form);
+const validFormArr = [];
+const button = form.elements["button"];
+
+formArr.forEach((el) => {
+  if (el.hasAttribute("data-reg")) {
+    el.setAttribute("is-valid", "0");
+    validFormArr.push(el);
+  }
+});
+
+form.addEventListener("input", inputHandler);
+form.addEventListener("submit", formCheck); // обработка кнопки "Отправить"
+
+function inputHandler({ target }) {
+  if (target.hasAttribute("data-reg")) {
+    inputCheck(target);
+  }
+}
+
+function inputCheck(el) {
+  const inputValue = el.value;
+  const inputReg = el.getAttribute("data-reg");
+  const reg = new RegExp(inputReg);
+  if (reg.test(inputValue)) {
+    el.setAttribute("is-valid", "1");
+    el.style.border = "2px solid rgb(0, 196, 0)";
+  } else {
+    el.setAttribute("is-valid", "0");
+    el.style.border = "2px solid rgb(255, 0, 0)";
+  }
+}
+
+// Здесь проверяем, можно ли отправить форму
+function formCheck(e) {
+  e.preventDefault(); // блокируем input
+  const allValid = []; // создаем массив валидных значений
+  validFormArr.forEach((el) => {
+    allValid.push(el.getAttribute("is-valid")); // проверяем каждое поле
+  });
+  const isAllValid = allValid.reduce((acc, current) => {
+    // проверяем, чтобы все было правильно
+    return acc && current;
+  });
+  if (!Boolean(Number(isAllValid))) {
+    alert("Заполните поля правильно!"); // если не правильно - сообщение пользователю
+    return;
+  }
+  formSubmit(); // если правильно - отправляем данные
+}
+</script>
+
+
 
 </body>
 </html>
