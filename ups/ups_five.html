@@ -1404,8 +1404,11 @@
 
   <script src="../js/jquery.backstretch.min.js">  
   </script>   
-  <script>
-  // После загрузки DOM-дерева (страницы)
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+// После загрузки DOM-дерева (страницы)
   $(function() {       
   //при нажатии на ссылку, содержащую Thumbnail  
     $('a.thumbnail').click(function(e) {    
@@ -1423,10 +1426,9 @@
       $('#image-modal .modal-body img').on('click', function() {    
         $("#image-modal").modal('hide')  
       });
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
+   
+
+
     $(document).ready(function () {
     $("form").submit(function () {
         // Получение ID формы
@@ -1450,9 +1452,17 @@
                 $(formNm).html(error);
             }
         });
-        return false;
+
+ });
+
+return false;
     });
+        
 });
+
+
+
+
 </script>
 
 
