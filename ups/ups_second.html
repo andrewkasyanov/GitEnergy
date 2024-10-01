@@ -12,6 +12,29 @@
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
+<input type="checkbox" id="mycheckbox">
+  <label for="mycheckbox" class="feedback-label">Отправьте запрос</label>
+  <form class="form" action="" id="feedback-form">
+    <div>
+      <label for="fullname">Имя</label>
+      <input type="text" id="name" name="name" placeholder="Иван Иванов">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com">
+    </div>
+    <div>
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7-000-0000000">
+    </div>
+    <div>
+      <label for="message">Запрос</label>
+      <textarea id="message" name="message" placeholder="Уточните проявление неисправности"></textarea>
+    </div>
+    <div>
+      <button type="submit"  name="submit">Отправить</button>
+    </div>
+  </form>
 
 <style>
   .modal-open {
@@ -4969,45 +4992,6 @@
             </div>   
         </div>
       </div>
-
- <!-- <div class="form answer">
-    <div class="row">
-      <div class="col-md-12">
-        <p><span class="request">Получить персональное предложение</span></p>
-        <form action="" method="get">
-        <label>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Иван Иванов">
-        </label>       
-        <label>
-          Электронная почта:
-          <input type="email" name="email" placeholder="example@email.com">
-        </label>
-        <label>
-          Номер телефона:
-          <input type="email" name="email" placeholder="+7-000-0000000">
-        </label>
-        <label>
-          Запрос:
-          <textarea name="comment" placeholder="Уточните необходимое количество и тип ИБП"></textarea>
-        </label>
-          <script type="text/javascript">  
-            $(document).ready(function(){ 
-              $("#myButton4").click(function(){
-                $(this).button('loading').delay(300).queue(function() {
-                $(this).button('complete');
-                $(this).dequeue();
-                });        
-              });
-            });   
-          </script>
-          <button type="button" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#">
-            Отправить
-          </button>
-        </form>
-      </div>
-    </div>
-  </div> -->
   </div> 
 </main>
 <!-- Footer -->
@@ -5073,5 +5057,36 @@
         });
       });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+    $("form").submit(function () {
+        // Получение ID формы
+        var formID = $(this).attr('id');
+        // Добавление решётки к имени ID
+        var formNm = $('#' + formID);
+        $.ajax({
+            type: "POST",
+            url: '../php/sendmail.php',
+            data: formNm.serialize(),
+            beforeSend: function () {
+                // Вывод текста в процессе отправки
+                $(formNm).html('<p style="text-align:center">Отправка...</p>');
+            },
+            success: function (data) {
+                // Вывод текста результата отправки
+                $(formNm).html('<p style="text-align:center">'+data+'</p>');
+            },
+            error: function (jqXHR, text, error) {
+                // Вывод текста ошибки отправки
+                $(formNm).html(error);
+            }
+        });
+        return false;
+    });
+});
+</script>
+
+
 </body>
 </html>
