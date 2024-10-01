@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title></title>
-</head>
-<body>
-
-<?php 
-$back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
-if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['email']) and !empty($_POST['message'])) {
-	$name = trim(strip_tags($_POST['name']));
-	$phone = trim(strip_tags($_POST['phone']));
-	$email = trim(strip_tags($_POST['email']));
-	$message = trim(strip_tags($_POST['message']));
-	mail('info@emergencyparts.ru', 'Письмо с info@emergencyparts.ru', 'Вам написал: '.$name.'<br />Его номер: '.$phone.'<br />Его почта: '.$email.'<br />Его сообщение: '.$message."Content-type: text/html; charset=utf-8");
-		echo "Ваше сообщение успешно отправлено!<Br>Вы получите ответ в ближайшее время<br> $back";
-		exit;
-}
-else {
-	echo "Для отправки сообщения заполните все поля! $back";
-	exit;
+<?
+if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' && !empty($_POST['name'])) {
+    $message = 'Имя: ' . $_POST['name'] . ' ';
+    $message .= 'Телефон: ' . $_POST['phone'] . ' ';
+    if(!empty($_POST['message'])) {
+        $message .= 'Текст: ' . $_POST['message'] . ' E-mail: ' .$_POST['email'].' ';
+    }
+    $mailTo = "info@emergencyparts.ru"; // Ваш e-mail
+    $subject = "Письмо с сайта Emergencyparts"; // Тема сообщения
+    $headers= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
+    $headers .= "From: info@emergencyparts.ru <info@emergencyparts.ru>\r\n";
+    if(mail($mailTo, $subject, $message, $headers)) {
+        echo "Спасибо, ".$_POST['name'].", мы свяжемся с вами в самое ближайшее время!"; 
+    } else {
+        echo "Сообщение не отправлено!"; 
+    }
 }
 ?>
-
-
-
-</body>
-</html>

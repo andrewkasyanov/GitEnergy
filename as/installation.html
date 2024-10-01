@@ -218,12 +218,12 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 col-sm-12" style="padding-top: 30px;">
-        <center>        
-          <div class="form answer">
-              <div class="row">
-                <div class="col-md-12">
-                  <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
-                  <form action="" method="get">
+        <center>  
+           <div class="form answer">
+            <div class="row">
+              <div class="col-md-12">
+                <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
+                <form id="feedback-form" action="">
                   <label>
                     Ваше имя:
                     <input type="text" name="name" placeholder="Иван Иванов">
@@ -234,29 +234,17 @@
                   </label>
                   <label>
                     Номер телефона:
-                    <input type="email" name="email" placeholder="+7-000-0000000">
+                    <input type="tel" name="phone" placeholder="+7-000-0000000">
                   </label>
                   <label>
                     Запрос:
-                    <textarea name="comment" placeholder="Уточните проявление неисправности"></textarea>
-                  </label>
-                    <script type="text/javascript">  
-                      $(document).ready(function(){ 
-                        $("#myButton4").click(function(){
-                          $(this).button('loading').delay(300).queue(function() {
-                          $(this).button('complete');
-                          $(this).dequeue();
-                          });        
-                        });
-                      });   
-                    </script>
-                    <button type="button" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#">
-                      Отправить
-                    </button>
-                  </form>
-                </div>
+                    <textarea name="message" placeholder="Уточните какие работы необходимо произвести"></textarea>
+                  </label>          
+                    <input class="btn btn-success" type="submit" name="submit" value="Отправить">
+                </form>
               </div>
             </div>
+          </div>
         </center>
       </div>
      

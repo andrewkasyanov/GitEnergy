@@ -116,58 +116,36 @@
     <div class="row">
      <div class="col-md-12 col-sm-12" style="padding-top: 30px;">
         <center>  
-
-
-         <div class="form answer">
-    <div class="row">
-      <div class="col-md-12">
-        <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
-        <form action="../php/sendmail.php" method="post">
-        <label>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Иван Иванов">
-        </label>       
-        <label>
-          Электронная почта:
-          <input type="text" name="email" placeholder="example@email.com">
-        </label>
-        <label>
-          Номер телефона:
-          <input type="text" name="phone" placeholder="+7-000-0000000">
-        </label>
-        <label>
-          Запрос:
-          <textarea name="message" placeholder="Уточните проявление неисправности"></textarea>
-        </label>
-          <script type="text/javascript">  
-            $(document).ready(function(){ 
-              $("#myButton4").click(function(){
-                $(this).button('loading').delay(300).queue(function() {
-                $(this).button('complete');
-                $(this).dequeue();
-                });        
-              });
-            });   
-          </script>
-          <button type="success" class="btn btn-success" id="myButton4" data-complete-text="Запрос отправлен" autocomplete="off" href="#" value="Отправить сообщение">
-            Отправить
-          </button>
-
-<input class="btn btn-success" type="submit" value="Отправить">
-
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-
+           <div class="form answer">
+            <div class="row">
+              <div class="col-md-12">
+                <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
+                <form id="feedback-form" action="">
+                  <label>
+                    Ваше имя:
+                    <input type="text" name="name" placeholder="Иван Иванов">
+                  </label>       
+                  <label>
+                    Электронная почта:
+                    <input type="email" name="email" placeholder="example@email.com">
+                  </label>
+                  <label>
+                    Номер телефона:
+                    <input type="tel" name="phone" placeholder="+7-000-0000000">
+                  </label>
+                  <label>
+                    Запрос:
+                    <textarea name="message" placeholder="Уточните проявление неисправности"></textarea>
+                  </label>          
+                    <input class="btn btn-success" type="submit" name="submit" value="Отправить">
+                </form>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     </div>
   </div>
-
-
 </main>
 <!-- Footer -->
 <div class="mt-5 pt-5 pb-5 footer">
@@ -210,60 +188,36 @@
 </div>
 
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-  const form = document.forms["form"];
-const formArr = Array.from(form);
-const validFormArr = [];
-const button = form.elements["button"];
-
-formArr.forEach((el) => {
-  if (el.hasAttribute("data-reg")) {
-    el.setAttribute("is-valid", "0");
-    validFormArr.push(el);
-  }
+    $(document).ready(function () {
+    $("form").submit(function () {
+        // Получение ID формы
+        var formID = $(this).attr('id');
+        // Добавление решётки к имени ID
+        var formNm = $('#' + formID);
+        $.ajax({
+            type: "POST",
+            url: '../php/sendmail.php',
+            data: formNm.serialize(),
+            beforeSend: function () {
+                // Вывод текста в процессе отправки
+                $(formNm).html('<p style="text-align:center">Отправка...</p>');
+            },
+            success: function (data) {
+                // Вывод текста результата отправки
+                $(formNm).html('<p style="text-align:center">'+data+'</p>');
+            },
+            error: function (jqXHR, text, error) {
+                // Вывод текста ошибки отправки
+                $(formNm).html(error);
+            }
+        });
+        return false;
+    });
 });
-
-form.addEventListener("input", inputHandler);
-form.addEventListener("submit", formCheck); // обработка кнопки "Отправить"
-
-function inputHandler({ target }) {
-  if (target.hasAttribute("data-reg")) {
-    inputCheck(target);
-  }
-}
-
-function inputCheck(el) {
-  const inputValue = el.value;
-  const inputReg = el.getAttribute("data-reg");
-  const reg = new RegExp(inputReg);
-  if (reg.test(inputValue)) {
-    el.setAttribute("is-valid", "1");
-    el.style.border = "2px solid rgb(0, 196, 0)";
-  } else {
-    el.setAttribute("is-valid", "0");
-    el.style.border = "2px solid rgb(255, 0, 0)";
-  }
-}
-
-// Здесь проверяем, можно ли отправить форму
-function formCheck(e) {
-  e.preventDefault(); // блокируем input
-  const allValid = []; // создаем массив валидных значений
-  validFormArr.forEach((el) => {
-    allValid.push(el.getAttribute("is-valid")); // проверяем каждое поле
-  });
-  const isAllValid = allValid.reduce((acc, current) => {
-    // проверяем, чтобы все было правильно
-    return acc && current;
-  });
-  if (!Boolean(Number(isAllValid))) {
-    alert("Заполните поля правильно!"); // если не правильно - сообщение пользователю
-    return;
-  }
-  formSubmit(); // если правильно - отправляем данные
-}
 </script>
-
 
 
 </body>
