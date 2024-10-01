@@ -10,33 +10,9 @@
     <link rel="shortcut icon" type="image/png" href="../images/Logo1.PNG">
     <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-</head>
-<body>
-<input type="checkbox" id="mycheckbox">
-  <label for="mycheckbox" class="feedback-label">Отправьте запрос</label>
-  <form class="form" action="" id="feedback-form">
-    <div>
-      <label for="fullname">Имя</label>
-      <input type="text" id="name" name="name" placeholder="Иван Иванов">
-    </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="example@email.com">
-    </div>
-    <div>
-      <label for="phone">Телефон</label>
-      <input type="tel" id="phone" name="phone" placeholder="+7-000-0000000">
-    </div>
-    <div>
-      <label for="message">Запрос</label>
-      <textarea id="message" name="message" placeholder="Уточните проявление неисправности"></textarea>
-    </div>
-    <div>
-      <button type="submit"  name="submit">Отправить</button>
-    </div>
-  </form>
-
-<style>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
   #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -113,7 +89,9 @@
     }
   }
 </style>
-<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
+</head>
+<body>
+  <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
   <div class="modal-dialog modal-lg">    
     <div class="modal-content">      
       <div class="modal-header">        
@@ -131,6 +109,32 @@
     </div>  
   </div>
 </div>
+<input type="checkbox" id="mycheckbox">
+  <label for="mycheckbox" class="feedback-label">Отправьте запрос</label>
+  <form class="form" action="" id="feedback-form">
+    <div>
+      <label for="fullname">Имя</label>
+      <input type="text" id="name" name="name" placeholder="Иван Иванов">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com">
+    </div>
+    <div>
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7-000-0000000">
+    </div>
+    <div>
+      <label for="message">Запрос</label>
+      <textarea id="message" name="message" placeholder="Уточните проявление неисправности"></textarea>
+    </div>
+    <div>
+      <button type="submit"  name="submit">Отправить</button>
+    </div>
+  </form>
+
+
+
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -489,30 +493,9 @@
   </div>
 </div>
 
-  <script src="../js/jquery.backstretch.min.js">  
-  </script>  
-<script>
-    // После загрузки DOM-дерева (страницы)
-    $(function() {       
-    //при нажатии на ссылку, содержащую Thumbnail  
-      $('a.thumbnail').click(function(e) {    
-        //отменить стандартное действие браузера    
-        e.preventDefault();    
-        //присвоить атрибуту scr элемента img модального окна    
-        //значение атрибута scr изображения, которое обёрнуто    
-        //вокруг элемента a, на который нажал пользователь    
-        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
-        //открыть модальное окно    
-        $("#image-modal").modal('show');  
-        });  
-        //при нажатию на изображение внутри модального окна   
-        //закрыть его (модальное окно)  
-        $('#image-modal .modal-body img').on('click', function() {    
-          $("#image-modal").modal('hide')  
-        });
-      });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+
+    
 <script>
     $(document).ready(function () {
     $("form").submit(function () {
@@ -541,7 +524,27 @@
     });
 });
 </script>
-
+<script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+    </script>
 
 </body>
 </html>
