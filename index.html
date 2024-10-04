@@ -10,7 +10,8 @@
     <link rel="shortcut icon" type="image/png" href="images/Logo1.PNG">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js">  </script>  
 
 
 </head>
@@ -312,36 +313,8 @@
 
 
 
-<script src="js/jquery.backstretch.min.js"></script>  
 <script>
-  window.onresize = changeLayout;
-function changeLayout(){
-    var carousel = document.getElementById('carousel');
-    var children = carousel.getElementsByTagName('div');
-    var length = children.length;
-    var w = window.innerWidth;
-    if(w < 600){
-        carousel.className = 'carousel-inner';
-        for(var i = 0; i < length; i++){
-            if(i == 0){
-                children[i].className = 'item active';
-                continue;
-            }
-            children[i].className = 'item';
-        }
-        $('#carousel').carousel({interval:1500});
-    }
-    else{
-        carousel.className = 'row'; 
-        for(var i = 0; i < length; i++){
-            children[i].className = 'col-md-6';        
-        }
-    }
-}
-changeLayout();
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
+  jQuery.noConflict()(function ($) {
     $(document).ready(function () {
     $("form").submit(function () {
         // Получение ID формы
@@ -367,8 +340,31 @@ changeLayout();
         });
         return false;
     });
+  });
 });
 </script>
+<script>
+  // После загрузки DOM-дерева (страницы)
+  $(function() {       
+  //при нажатии на ссылку, содержащую Thumbnail  
+    $('a.thumbnail').click(function(e) {    
+      //отменить стандартное действие браузера    
+      e.preventDefault();    
+      //присвоить атрибуту scr элемента img модального окна    
+      //значение атрибута scr изображения, которое обёрнуто    
+      //вокруг элемента a, на который нажал пользователь    
+      $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+      //открыть модальное окно    
+      $("#image-modal").modal('show');  
+      });  
+      //при нажатию на изображение внутри модального окна   
+      //закрыть его (модальное окно)  
+      $('#image-modal .modal-body img').on('click', function() {    
+        $("#image-modal").modal('hide')  
+      });
+    });
+</script>
+
 
 </body>
 </html>

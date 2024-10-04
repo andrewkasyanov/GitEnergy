@@ -375,6 +375,7 @@ textarea {
 .form textarea,
 .form button {
   border-radius: var(--border-radius);
+
 }
 .feedback-label,
 .form button {
@@ -420,7 +421,7 @@ form div:last-child {
 }
 
 [type="checkbox"]:focus + .feedback-label {
-  outline: 2px solid rgb(77, 144, 254);
+  outline: 1px solid #FFA7C8;
 }
 
 [type="checkbox"]:checked ~ .form {

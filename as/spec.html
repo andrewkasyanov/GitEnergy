@@ -497,6 +497,7 @@
 
     
 <script>
+  jQuery.noConflict()(function ($) {
     $(document).ready(function () {
     $("form").submit(function () {
         // Получение ID формы
@@ -522,6 +523,7 @@
         });
         return false;
     });
+  });
 });
 </script>
 <script>

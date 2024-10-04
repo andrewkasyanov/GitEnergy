@@ -10,6 +10,9 @@
     <link rel="shortcut icon" type="image/png" href="../images/Logo1.PNG">
     <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/jquery.backstretch.min.js">  </script>  
+
 </head>
 <body>
 <input type="checkbox" id="mycheckbox">
@@ -36,30 +39,29 @@
     </div>
   </form>
 
-<style>
-  .modal-open {
-    margin-right: -17px;
-    overflow: scroll;
-  }
-</style>
+
 <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
   <div class="modal-dialog modal-lg">    
     <div class="modal-content">      
       <div class="modal-header">        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span></button>        
-        <div class="modal-title">Просмотр
+          <span aria-hidden="true"></span></button>        
+        <div class="modal-title">
         </div>      
       </div>      
       <div class="modal-body">  
         <img class="img-responsive center-block" src="" alt=""> 
       </div>      
       <div class="modal-footer">        
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>    
       </div>    
     </div>  
   </div>
 </div>
+
+
+
+
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -140,6 +142,25 @@
   </div>
 
 
+<div aria-live="polite" aria-atomic="true" class="bg-body-secondary position-relative bd-example-toasts rounded-3">
+  <div class="toast-container p-3" id="toastPlacement">
+    <div class="toast">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 мин назад</small>
+      </div>
+      <div class="toast-body">
+        Привет мир! Это тост-сообщение.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
 </main>
 <!-- Footer -->
 <div class="mt-5 pt-5 pb-5 footer">
@@ -180,8 +201,9 @@
     </div>
   </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 <script>
+  jQuery.noConflict()(function ($) {
     $(document).ready(function () {
     $("form").submit(function () {
         // Получение ID формы
@@ -207,6 +229,43 @@
         });
         return false;
     });
+  });
+});
+</script>
+<script>
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
+      });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // получим кнопку id="btn" с помощью которой будем открывать модальное окно
+  const btn = document.querySelector('#btn');
+  // активируем контент id="modal" как модальное окно
+  const modal = new bootstrap.Modal(document.querySelector('#modal'));
+  // при нажатии на кнопку
+  btn.addEventListener('click', function() {
+    // открываем модальное окно
+    modal.show();
+  });
+
 });
 </script>
 
