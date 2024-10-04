@@ -469,7 +469,7 @@ form div:last-child {
   -webkit-background-clip: text; 
   color: transparent;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 75px;
+  font-size: 4vw;
   font-weight: bold;
 }
 .SA {
@@ -479,7 +479,7 @@ form div:last-child {
   -webkit-background-clip: text; 
   color: transparent;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 75px;
+  font-size: 4vw;
   font-weight: bold;
 }
 .RF {
