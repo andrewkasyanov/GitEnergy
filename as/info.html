@@ -11,7 +11,7 @@
     <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/jquery.backstretch.min.js">  </script>
+    <script src="../js/jquery.backstretch.min.js">  </script> 
 </head>
 <body>
 <input type="checkbox" id="mycheckbox">
@@ -37,26 +37,20 @@
       <button type="submit"  name="submit">Отправить</button>
     </div>
   </form>
-<style>
-  .modal-open {
-    margin-right: -17px;
-    overflow: scroll;
-  }
-</style>
 <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
   <div class="modal-dialog modal-lg">    
     <div class="modal-content">      
       <div class="modal-header">        
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span></button>        
-        <div class="modal-title">Просмотр
+          <span aria-hidden="true"></span></button>        
+        <div class="modal-title">
         </div>      
       </div>      
       <div class="modal-body">  
         <img class="img-responsive center-block" src="" alt=""> 
       </div>      
       <div class="modal-footer">        
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>    
       </div>    
     </div>  
   </div>
@@ -81,7 +75,7 @@
             <ul class="nav navbar-nav">
               <li class="nav-item">
                 <a href="../index.html">Главная</a>
-              </li> 
+              </li>
               <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">
                 <span class="glyphicon glyphicon-list"></span>
@@ -106,14 +100,14 @@
                 <a href="../as/installation.html">Пуско-наладочные работы</a>
               </li>
               <li class="nav-item">
-                <a href="../as/404.html">Тендеры</a>
-              </li> 
+                <a href="#">Тендеры</a>
+              </li>
               <li class="nav-item">
                 <a href="../as/spec.html">О нас<span class="sr-only">(current)</span></a>
               </li> 
               <li class="nav-item">
                 <a href="../as/info.html">Контакты</a>
-              </li>            
+              </li>             
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a class="message" href="#"><span class="glyphicon glyphicon-send"></span></a>
@@ -128,9 +122,38 @@
       </div>
     </nav>
   </header>
-<main>  
+<main>
+ <div class="article container" style="padding-top:2px;">
+  <div class="row">    
+    <div class="col-lg-12 col-xs-12" style="padding-left:2px; padding-right: 2px;">      
+      <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/org/a_servis/183422716403/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">А-Сервис</a>
+        <a href="https://yandex.ru/maps/2/saint-petersburg/category/specialized_vehicles_spare_parts/37912439240/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323199%2C59.975937&mode=poi&poi%5Bpoint%5D=30.321824%2C59.974991&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D183422716403&z=17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative; width: 100%; border-radius: 15px;">
+        </iframe>
+      </div>
+      <div class="col-lg-7 col-xs-12">
+        <h3 class="h4 page header">197022, Санкт-Петербург, ул.Инструментальная, д.3А, оф.312</h3>
+        <h3 class="h4 page header">Телефон: 8 (800) 200-09-04</h3>
+        <h3 class="h4 page header">E-mail: <a href="mailto:info@emergencyparts.ru?subject=Запрос с сайта Emergencyparts.ru" style="text-decoration: none;">info@emergencyparts.ru</a></h3>        
+      </div>
+      <div class="col-lg-5 col-xs-12" style="text-align: right;">
+        <span class="AS">А</span><span class="SA">-Сервис</span>
+        <span class="RF">Сделано в России</span>
+      </div>
+
+
+
+
+
+    </div>
+  </div>   
+ </div>
+
 
   
+
+
 </main>
 <!-- Footer -->
 <div class="mt-5 pt-5 pb-5 footer">
@@ -143,9 +166,9 @@
           color: inherit !important; 
           padding-top: 10px;
           line-height: 2em;
-          margin: 0;
+          margin: 0;          
           ">А-Сервис</h2>
-        <p class="pr-5 text-white-50">Благодарим Вас за интерес к нашей компании. Мы рады помочь Вам в решении задач Вашего бизнеса.</p>
+        <p class="pr-5 text-white-50">Благодарим Вас за интерес к нашей компании. Мы рады помочь Вам в решении задач Вашего бизнеса.</p>        
       </div>
       <div class="col-lg-3 col-xs-12 links">
         <h4 class="mt-lg-0 mt-sm-3">Клиентам</h4>
@@ -202,25 +225,40 @@
 });
 </script>
 <script>
-  // После загрузки DOM-дерева (страницы)
-  $(function() {       
-  //при нажатии на ссылку, содержащую Thumbnail  
-    $('a.thumbnail').click(function(e) {    
-      //отменить стандартное действие браузера    
-      e.preventDefault();    
-      //присвоить атрибуту scr элемента img модального окна    
-      //значение атрибута scr изображения, которое обёрнуто    
-      //вокруг элемента a, на который нажал пользователь    
-      $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
-      //открыть модальное окно    
-      $("#image-modal").modal('show');  
-      });  
-      //при нажатию на изображение внутри модального окна   
-      //закрыть его (модальное окно)  
-      $('#image-modal .modal-body img').on('click', function() {    
-        $("#image-modal").modal('hide')  
+    // После загрузки DOM-дерева (страницы)
+    $(function() {       
+    //при нажатии на ссылку, содержащую Thumbnail  
+      $('a.thumbnail').click(function(e) {    
+        //отменить стандартное действие браузера    
+        e.preventDefault();    
+        //присвоить атрибуту scr элемента img модального окна    
+        //значение атрибута scr изображения, которое обёрнуто    
+        //вокруг элемента a, на который нажал пользователь    
+        $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));    
+        //открыть модальное окно    
+        $("#image-modal").modal('show');  
+        });  
+        //при нажатию на изображение внутри модального окна   
+        //закрыть его (модальное окно)  
+        $('#image-modal .modal-body img').on('click', function() {    
+          $("#image-modal").modal('hide')  
+        });
       });
-    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // получим кнопку id="btn" с помощью которой будем открывать модальное окно
+  const btn = document.querySelector('#btn');
+  // активируем контент id="modal" как модальное окно
+  const modal = new bootstrap.Modal(document.querySelector('#modal'));
+  // при нажатии на кнопку
+  btn.addEventListener('click', function() {
+    // открываем модальное окно
+    modal.show();
+  });
+
+});
 </script>
 
 
