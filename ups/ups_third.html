@@ -14,6 +14,12 @@
     <script src="../js/jquery.backstretch.min.js">  </script>
 </head>
 <body>
+<a href="#x" class="overlay" id="win1"></a>
+ <div class="popup">
+  <h1>Отдел продаж: 8 (800) 201-04-04<br>
+    Сервисная служба: 8 (921) 380-53-73   
+  <a class="close" title="Закрыть" href="#close"></a></h1>
+</div>
 <input type="checkbox" id="mycheckbox">
   <label for="mycheckbox" class="feedback-label">Отправьте запрос</label>
   <form class="form" action="" id="feedback-form">
@@ -45,19 +51,10 @@
 </style>
 <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">  
   <div class="modal-dialog modal-lg">    
-    <div class="modal-content">      
-      <div class="modal-header">        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">X</span></button>        
-        <div class="modal-title">    <br>
-        </div>      
-      </div>      
+    <div class="modal-content">  
       <div class="modal-body">  
         <img class="img-responsive center-block" src="" alt=""> 
       </div>      
-      <div class="modal-footer">        
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>      
-      </div>    
     </div>  
   </div>
 </div>
@@ -116,11 +113,11 @@
               </li>            
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="message" href="#"><span class="glyphicon glyphicon-send"></span></a>            
+              <li><a class="message" href="http://telegram.me/AServiceUpsbot" target="_blank"><span class="glyphicon glyphicon-send"></span></a>            
               </li>
               <li><a class="message" href="mailto:info@emergencyparts.ru?subject=Запрос с сайта Emergencyparts.ru"><span class="glyphicon glyphicon-envelope"></span></a>            
               </li>
-              <li><a class="message" href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+              <li><a class="message" href="#win1"><span class="glyphicon glyphicon-phone-alt"></span></a>
               </li>
             </ul>
           </div>
