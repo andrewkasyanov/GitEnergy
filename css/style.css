@@ -416,6 +416,8 @@ form div:last-child {
 }
 
 .AS {
+
+    /* 
     -webkit-text-stroke-width: 0.5px;
 -webkit-text-stroke-color: #e8e6e6;
   background: linear-gradient(135deg, rgba(250, 250, 250, 1) 30%, rgba(28, 53, 120, 1) 50%, rgba(228, 24, 28, 1) 100%);
@@ -423,9 +425,14 @@ form div:last-child {
   color: transparent;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 4vw;
+  font-weight: bold; */
+  font-family: 'Ruberoid', Arial, sans-serif;
+  font-size: 3vw;
   font-weight: bold;
 }
 .SA {
+
+/*    
 -webkit-text-stroke-width: 0.5px;
 -webkit-text-stroke-color: #e8e6e6; 
   background: linear-gradient(180deg, rgba(250, 250, 250, 1) 30%, rgba(28, 53, 120, 1) 50%, rgba(228, 24, 28, 1) 100%);
@@ -433,13 +440,16 @@ form div:last-child {
   color: transparent;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 4vw;
+  font-weight: bold; */
+  font-family: 'Ruberoid', Arial, sans-serif;
+  font-size: 3vw;
   font-weight: bold;
 }
 .RF {
     font-style: italic;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
+   font-family: 'Ruberoid', Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
 }
 .tile {
    
@@ -451,24 +461,28 @@ form div:last-child {
 
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #A4752A;
+    color: #3c7f90;
     text-decoration: none !important;    
     
-    box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.0);
-    transition: box-shadow 0.02s linear;
-    border-radius: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #254E58;
+    box-shadow: 0px 0px 0px 10px rgb(#3c7f90 / 20%);
+
+    /* box-shadow: 0px 0px 0px 1px #6e6659; */
+    transition: box-shadow 0.25s linear;
+    border-radius: 10px;
     
     width: 350px;
-    height: 150px; 
+    
    
-    background-color: #FCE181;
+    background-color: #f5f5f5;
 
 }
 .tile:hover {
-    box-shadow: 0px 0px 0px 10px #FCCC81;  
+    box-shadow: 0px 0px 5px 1px #254E58;  
     text-decoration: none !important;
-    background-color: #FCCC81;
-    color: #FEFAB9;
+    background-color: #f5f5f5;
+    color: #254E58;
 }
 
 
