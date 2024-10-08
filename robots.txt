@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /as/form.html
+User-agent: Googlebot
+Disallow: /as/form.html
+User-agent: *
+Disallow: /as/form.html
+Sitemap: https://emergencyparts.ru/sitemap.xml
