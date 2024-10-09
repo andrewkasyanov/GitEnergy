@@ -13,17 +13,6 @@
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
-
-
-<a href="#x" class="overlay" id="win1"></a>
- <div class="popup">
-  <h1>Отдел продаж: 8 (800) 201-04-04<br>
-    Сервисная служба: 8 (921) 380-53-73   
-  <a class="close"title="Закрыть" href="#close"></a></h1>
-</div>
-
-
-
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -83,80 +72,18 @@
               </li>
               <li><a class="message" href="mailto:info@emergencyparts.ru?subject=Запрос с сайта Emergencyparts.ru"><span class="glyphicon glyphicon-envelope"></span></a>
               </li>
-              <li><a class="message" href="#win1"><span class="glyphicon glyphicon-phone-alt"></span></a>
-              </li>
+              <li class="visible-md-block visible-lg-block"><a class="message" href="#win1"><span class="glyphicon glyphicon-phone-alt"></span></a>
+          </li>
+          <li class="visible-xs-block"><a class="message" href="tel:89213805373"><span class="glyphicon glyphicon-phone-alt"></span></a>
+          </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
   </header>
-
 <main>
-  <div class="article container" style="min-height: 550px;"> 
-    <!-- <div class="row">
-     <div class="col-md-12 col-sm-12" style="padding-top: 30px;">
-        <center>  
-           <div class="form answer">
-            <div class="row">
-              <div class="col-md-12">
-                <p><span class="request">Оставьте заявку и мы с Вами свяжемся.</span></p>
-                <form id="feedback-form" action="">
-                  <label>
-                    Ваше имя:
-                    <input type="text" name="name" placeholder="Иван Иванов">
-                  </label>       
-                  <label>
-                    Электронная почта:
-                    <input type="email" name="email" placeholder="example@email.com">
-                  </label>
-                  <label>
-                    Номер телефона:
-                    <input type="tel" name="phone" placeholder="+7-000-0000000">
-                  </label>
-                  <label>
-                    Запрос:
-                    <textarea name="message" placeholder="Уточните проявление неисправности"></textarea>
-                  </label>          
-                    <input class="btn btn-success" type="submit" name="submit" value="Отправить">
-                </form>
-              </div>
-            </div>
-          </div>
-        </center>
-      </div>
-    </div> -->
-<div class="row">
-<div class="col-md-12 col-sm-12" style="padding-top: 30px;">
-        <center>
-
-
-
-
-
-<input type="checkbox" id="mycheckbox">
-<label for="mycheckbox" class="feedback-label">Отправьте запрос</label>
-<form class="form" action="" id="feedback-form">
-  <div>
-    <label for="fullname">Имя</label>
-    <input type="text" id="name" name="name" placeholder="Иван Иванов">
-  </div>
-  <div>
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="example@email.com">
-  </div>
-  <div>
-    <label for="phone">Телефон</label>
-    <input type="tel" id="phone" name="phone" placeholder="+7-000-0000000">
-  </div>
-  <div>
-    <label for="message">Запрос</label>
-    <textarea id="message" name="message" placeholder="Уточните проявление неисправности"></textarea>
-  </div>
-  <div>
-    <button type="submit"  name="submit">Отправить</button>
-  </div>
-</form>
+  
 
 
 
@@ -164,10 +91,22 @@
 
 
 
-        </center>
-      </div>
-</div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </main>
 <!-- Footer -->
 <div class="mt-5 pt-5 pb-5 footer">
@@ -208,39 +147,5 @@
     </div>
   </div>
 </div>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-    $("form").submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
-        $.ajax({
-            type: "POST",
-            url: '../php/sendmail.php',
-            data: formNm.serialize(),
-            beforeSend: function () {
-                // Вывод текста в процессе отправки
-                $(formNm).html('<p style="text-align:center">Отправка...</p>');
-            },
-            success: function (data) {
-                // Вывод текста результата отправки
-                $(formNm).html('<p style="text-align:center">'+data+'</p>');
-            },
-            error: function (jqXHR, text, error) {
-                // Вывод текста ошибки отправки
-                $(formNm).html(error);
-            }
-        });
-        return false;
-    });
-});
-</script>
-
-
 </body>
 </html>
